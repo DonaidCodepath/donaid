@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A64D11BF5DA6D66F4013FD19 /* Pods_Donaid.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B11DC37F04DBBD40ECA4FA3 /* Pods_Donaid.framework */; };
 		CF16C3DE1EAEF85200AAECD7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF16C3DD1EAEF85200AAECD7 /* AppDelegate.swift */; };
 		CF16C3E01EAEF85200AAECD7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF16C3DF1EAEF85200AAECD7 /* ViewController.swift */; };
 		CF16C3E31EAEF85200AAECD7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF16C3E11EAEF85200AAECD7 /* Main.storyboard */; };
@@ -15,6 +16,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		09CEB9FACAA8141452FE3678 /* Pods-Donaid.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Donaid.release.xcconfig"; path = "Pods/Target Support Files/Pods-Donaid/Pods-Donaid.release.xcconfig"; sourceTree = "<group>"; };
+		6B11DC37F04DBBD40ECA4FA3 /* Pods_Donaid.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Donaid.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF16C3DA1EAEF85200AAECD7 /* Donaid.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Donaid.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF16C3DD1EAEF85200AAECD7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CF16C3DF1EAEF85200AAECD7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +25,7 @@
 		CF16C3E41EAEF85200AAECD7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CF16C3E71EAEF85200AAECD7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CF16C3E91EAEF85200AAECD7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EC408D8CD0D18793C745B2A3 /* Pods-Donaid.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Donaid.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Donaid/Pods-Donaid.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +33,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A64D11BF5DA6D66F4013FD19 /* Pods_Donaid.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4F88F95EEA73A5C187D216F7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6B11DC37F04DBBD40ECA4FA3 /* Pods_Donaid.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B3AC3AC21E2F21D69681E420 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				EC408D8CD0D18793C745B2A3 /* Pods-Donaid.debug.xcconfig */,
+				09CEB9FACAA8141452FE3678 /* Pods-Donaid.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		CF16C3D11EAEF85100AAECD7 = {
 			isa = PBXGroup;
 			children = (
 				CF16C3DC1EAEF85200AAECD7 /* Donaid */,
 				CF16C3DB1EAEF85200AAECD7 /* Products */,
+				B3AC3AC21E2F21D69681E420 /* Pods */,
+				4F88F95EEA73A5C187D216F7 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -71,9 +95,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CF16C3EC1EAEF85200AAECD7 /* Build configuration list for PBXNativeTarget "Donaid" */;
 			buildPhases = (
+				023C6B7C7154E48E6E616DCC /* [CP] Check Pods Manifest.lock */,
 				CF16C3D61EAEF85100AAECD7 /* Sources */,
 				CF16C3D71EAEF85100AAECD7 /* Frameworks */,
 				CF16C3D81EAEF85100AAECD7 /* Resources */,
+				A20843AFCB4F3A4E018A901F /* [CP] Embed Pods Frameworks */,
+				0310BB98AF76A2BA07B0B30C /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -130,6 +157,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		023C6B7C7154E48E6E616DCC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		0310BB98AF76A2BA07B0B30C /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Donaid/Pods-Donaid-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A20843AFCB4F3A4E018A901F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Donaid/Pods-Donaid-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		CF16C3D61EAEF85100AAECD7 /* Sources */ = {
@@ -260,6 +335,7 @@
 		};
 		CF16C3ED1EAEF85200AAECD7 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EC408D8CD0D18793C745B2A3 /* Pods-Donaid.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Donaid/Info.plist;
@@ -272,6 +348,7 @@
 		};
 		CF16C3EE1EAEF85200AAECD7 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 09CEB9FACAA8141452FE3678 /* Pods-Donaid.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Donaid/Info.plist;
