@@ -13,6 +13,9 @@
 		CF16C3E31EAEF85200AAECD7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF16C3E11EAEF85200AAECD7 /* Main.storyboard */; };
 		CF16C3E51EAEF85200AAECD7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CF16C3E41EAEF85200AAECD7 /* Assets.xcassets */; };
 		CF16C3E81EAEF85200AAECD7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF16C3E61EAEF85200AAECD7 /* LaunchScreen.storyboard */; };
+		CFAEEE341EB68AD700CA7AD2 /* FTUCardNumberViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFAEEE331EB68AD700CA7AD2 /* FTUCardNumberViewController.swift */; };
+		CFAEEE361EB68B0100CA7AD2 /* FTUCardDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFAEEE351EB68B0100CA7AD2 /* FTUCardDetailsViewController.swift */; };
+		CFAEEE381EB68B2A00CA7AD2 /* DonaidTagViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFAEEE371EB68B2A00CA7AD2 /* DonaidTagViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +28,9 @@
 		CF16C3E41EAEF85200AAECD7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CF16C3E71EAEF85200AAECD7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CF16C3E91EAEF85200AAECD7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CFAEEE331EB68AD700CA7AD2 /* FTUCardNumberViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FTUCardNumberViewController.swift; sourceTree = "<group>"; };
+		CFAEEE351EB68B0100CA7AD2 /* FTUCardDetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FTUCardDetailsViewController.swift; sourceTree = "<group>"; };
+		CFAEEE371EB68B2A00CA7AD2 /* DonaidTagViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DonaidTagViewController.swift; sourceTree = "<group>"; };
 		EC408D8CD0D18793C745B2A3 /* Pods-Donaid.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Donaid.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Donaid/Pods-Donaid.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -80,7 +86,10 @@
 			children = (
 				CF16C3DD1EAEF85200AAECD7 /* AppDelegate.swift */,
 				CF16C3DF1EAEF85200AAECD7 /* ViewController.swift */,
+				CFAEEE351EB68B0100CA7AD2 /* FTUCardDetailsViewController.swift */,
 				CF16C3E11EAEF85200AAECD7 /* Main.storyboard */,
+				CFAEEE371EB68B2A00CA7AD2 /* DonaidTagViewController.swift */,
+				CFAEEE331EB68AD700CA7AD2 /* FTUCardNumberViewController.swift */,
 				CF16C3E41EAEF85200AAECD7 /* Assets.xcassets */,
 				CF16C3E61EAEF85200AAECD7 /* LaunchScreen.storyboard */,
 				CF16C3E91EAEF85200AAECD7 /* Info.plist */,
@@ -211,8 +220,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CFAEEE361EB68B0100CA7AD2 /* FTUCardDetailsViewController.swift in Sources */,
 				CF16C3E01EAEF85200AAECD7 /* ViewController.swift in Sources */,
+				CFAEEE381EB68B2A00CA7AD2 /* DonaidTagViewController.swift in Sources */,
 				CF16C3DE1EAEF85200AAECD7 /* AppDelegate.swift in Sources */,
+				CFAEEE341EB68AD700CA7AD2 /* FTUCardNumberViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -378,6 +390,7 @@
 				CF16C3EE1EAEF85200AAECD7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
