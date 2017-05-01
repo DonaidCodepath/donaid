@@ -7,30 +7,44 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		464F9B141EB70E4000C3DA70 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 464F9B131EB70E4000C3DA70 /* User.swift */; };
+		464F9B161EB70E8900C3DA70 /* Issue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 464F9B151EB70E8900C3DA70 /* Issue.swift */; };
+		464F9B181EB70EAD00C3DA70 /* Organization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 464F9B171EB70EAD00C3DA70 /* Organization.swift */; };
+		464F9B1A1EB70F0700C3DA70 /* PaymentInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 464F9B191EB70F0700C3DA70 /* PaymentInfo.swift */; };
+		464F9B1E1EB7119F00C3DA70 /* DonaidParse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 464F9B1D1EB7119F00C3DA70 /* DonaidParse.swift */; };
+		464F9B241EB7186B00C3DA70 /* FTUPhoneNumberViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 464F9B231EB7186B00C3DA70 /* FTUPhoneNumberViewController.swift */; };
+		464F9B261EB7189C00C3DA70 /* FTUVerificationcodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 464F9B251EB7189C00C3DA70 /* FTUVerificationcodeViewController.swift */; };
+		464F9B281EB718B000C3DA70 /* FTUFirstNameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 464F9B271EB718B000C3DA70 /* FTUFirstNameViewController.swift */; };
 		A64D11BF5DA6D66F4013FD19 /* Pods_Donaid.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B11DC37F04DBBD40ECA4FA3 /* Pods_Donaid.framework */; };
 		CF16C3DE1EAEF85200AAECD7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF16C3DD1EAEF85200AAECD7 /* AppDelegate.swift */; };
-		CF16C3E01EAEF85200AAECD7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF16C3DF1EAEF85200AAECD7 /* ViewController.swift */; };
 		CF16C3E31EAEF85200AAECD7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF16C3E11EAEF85200AAECD7 /* Main.storyboard */; };
 		CF16C3E51EAEF85200AAECD7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CF16C3E41EAEF85200AAECD7 /* Assets.xcassets */; };
 		CF16C3E81EAEF85200AAECD7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF16C3E61EAEF85200AAECD7 /* LaunchScreen.storyboard */; };
 		CFAEEE341EB68AD700CA7AD2 /* FTUCardNumberViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFAEEE331EB68AD700CA7AD2 /* FTUCardNumberViewController.swift */; };
 		CFAEEE361EB68B0100CA7AD2 /* FTUCardDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFAEEE351EB68B0100CA7AD2 /* FTUCardDetailsViewController.swift */; };
-		CFAEEE381EB68B2A00CA7AD2 /* DonaidTagViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFAEEE371EB68B2A00CA7AD2 /* DonaidTagViewController.swift */; };
+		CFAEEE381EB68B2A00CA7AD2 /* FTUDonaidTagViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFAEEE371EB68B2A00CA7AD2 /* FTUDonaidTagViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		09CEB9FACAA8141452FE3678 /* Pods-Donaid.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Donaid.release.xcconfig"; path = "Pods/Target Support Files/Pods-Donaid/Pods-Donaid.release.xcconfig"; sourceTree = "<group>"; };
+		464F9B131EB70E4000C3DA70 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		464F9B151EB70E8900C3DA70 /* Issue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Issue.swift; sourceTree = "<group>"; };
+		464F9B171EB70EAD00C3DA70 /* Organization.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Organization.swift; sourceTree = "<group>"; };
+		464F9B191EB70F0700C3DA70 /* PaymentInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaymentInfo.swift; sourceTree = "<group>"; };
+		464F9B1D1EB7119F00C3DA70 /* DonaidParse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DonaidParse.swift; sourceTree = "<group>"; };
+		464F9B231EB7186B00C3DA70 /* FTUPhoneNumberViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FTUPhoneNumberViewController.swift; sourceTree = "<group>"; };
+		464F9B251EB7189C00C3DA70 /* FTUVerificationcodeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FTUVerificationcodeViewController.swift; sourceTree = "<group>"; };
+		464F9B271EB718B000C3DA70 /* FTUFirstNameViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FTUFirstNameViewController.swift; sourceTree = "<group>"; };
 		6B11DC37F04DBBD40ECA4FA3 /* Pods_Donaid.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Donaid.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF16C3DA1EAEF85200AAECD7 /* Donaid.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Donaid.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF16C3DD1EAEF85200AAECD7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		CF16C3DF1EAEF85200AAECD7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		CF16C3E21EAEF85200AAECD7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CF16C3E41EAEF85200AAECD7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CF16C3E71EAEF85200AAECD7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CF16C3E91EAEF85200AAECD7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CFAEEE331EB68AD700CA7AD2 /* FTUCardNumberViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FTUCardNumberViewController.swift; sourceTree = "<group>"; };
 		CFAEEE351EB68B0100CA7AD2 /* FTUCardDetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FTUCardDetailsViewController.swift; sourceTree = "<group>"; };
-		CFAEEE371EB68B2A00CA7AD2 /* DonaidTagViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DonaidTagViewController.swift; sourceTree = "<group>"; };
+		CFAEEE371EB68B2A00CA7AD2 /* FTUDonaidTagViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FTUDonaidTagViewController.swift; sourceTree = "<group>"; };
 		EC408D8CD0D18793C745B2A3 /* Pods-Donaid.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Donaid.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Donaid/Pods-Donaid.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -46,6 +60,45 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		464F9B121EB70E0F00C3DA70 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				464F9B131EB70E4000C3DA70 /* User.swift */,
+				464F9B151EB70E8900C3DA70 /* Issue.swift */,
+				464F9B171EB70EAD00C3DA70 /* Organization.swift */,
+				464F9B191EB70F0700C3DA70 /* PaymentInfo.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		464F9B1C1EB7116A00C3DA70 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				464F9B1D1EB7119F00C3DA70 /* DonaidParse.swift */,
+			);
+			name = API;
+			sourceTree = "<group>";
+		};
+		464F9B1F1EB7125500C3DA70 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				CFAEEE351EB68B0100CA7AD2 /* FTUCardDetailsViewController.swift */,
+				CFAEEE371EB68B2A00CA7AD2 /* FTUDonaidTagViewController.swift */,
+				CFAEEE331EB68AD700CA7AD2 /* FTUCardNumberViewController.swift */,
+				464F9B231EB7186B00C3DA70 /* FTUPhoneNumberViewController.swift */,
+				464F9B251EB7189C00C3DA70 /* FTUVerificationcodeViewController.swift */,
+				464F9B271EB718B000C3DA70 /* FTUFirstNameViewController.swift */,
+			);
+			name = "View Controllers";
+			sourceTree = "<group>";
+		};
+		464F9B201EB7126100C3DA70 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
 		4F88F95EEA73A5C187D216F7 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -84,12 +137,12 @@
 		CF16C3DC1EAEF85200AAECD7 /* Donaid */ = {
 			isa = PBXGroup;
 			children = (
+				464F9B201EB7126100C3DA70 /* Views */,
+				464F9B1F1EB7125500C3DA70 /* View Controllers */,
+				464F9B1C1EB7116A00C3DA70 /* API */,
+				464F9B121EB70E0F00C3DA70 /* Models */,
 				CF16C3DD1EAEF85200AAECD7 /* AppDelegate.swift */,
-				CF16C3DF1EAEF85200AAECD7 /* ViewController.swift */,
-				CFAEEE351EB68B0100CA7AD2 /* FTUCardDetailsViewController.swift */,
 				CF16C3E11EAEF85200AAECD7 /* Main.storyboard */,
-				CFAEEE371EB68B2A00CA7AD2 /* DonaidTagViewController.swift */,
-				CFAEEE331EB68AD700CA7AD2 /* FTUCardNumberViewController.swift */,
 				CF16C3E41EAEF85200AAECD7 /* Assets.xcassets */,
 				CF16C3E61EAEF85200AAECD7 /* LaunchScreen.storyboard */,
 				CF16C3E91EAEF85200AAECD7 /* Info.plist */,
@@ -220,9 +273,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				464F9B241EB7186B00C3DA70 /* FTUPhoneNumberViewController.swift in Sources */,
+				464F9B1E1EB7119F00C3DA70 /* DonaidParse.swift in Sources */,
 				CFAEEE361EB68B0100CA7AD2 /* FTUCardDetailsViewController.swift in Sources */,
-				CF16C3E01EAEF85200AAECD7 /* ViewController.swift in Sources */,
-				CFAEEE381EB68B2A00CA7AD2 /* DonaidTagViewController.swift in Sources */,
+				464F9B261EB7189C00C3DA70 /* FTUVerificationcodeViewController.swift in Sources */,
+				464F9B281EB718B000C3DA70 /* FTUFirstNameViewController.swift in Sources */,
+				464F9B161EB70E8900C3DA70 /* Issue.swift in Sources */,
+				464F9B181EB70EAD00C3DA70 /* Organization.swift in Sources */,
+				464F9B1A1EB70F0700C3DA70 /* PaymentInfo.swift in Sources */,
+				464F9B141EB70E4000C3DA70 /* User.swift in Sources */,
+				CFAEEE381EB68B2A00CA7AD2 /* FTUDonaidTagViewController.swift in Sources */,
 				CF16C3DE1EAEF85200AAECD7 /* AppDelegate.swift in Sources */,
 				CFAEEE341EB68AD700CA7AD2 /* FTUCardNumberViewController.swift in Sources */,
 			);
