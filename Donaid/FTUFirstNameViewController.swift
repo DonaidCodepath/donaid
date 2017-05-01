@@ -1,20 +1,15 @@
 //
-//  FTUCardNumberViewController.swift
+//  FTUFirstNameViewController.swift
 //  Donaid
 //
-//  Created by Golla, Chaitanya Teja on 4/30/17.
+//  Created by Waghmare, Amol on 01/05/17.
 //  Copyright © 2017 Donaid Codepath. All rights reserved.
 //
 
 import UIKit
 
-class FTUCardNumberViewController: UIViewController {
+class FTUFirstNameViewController: UIViewController {
 
-    @IBOutlet weak var First4TextField: UITextField!
-    @IBOutlet weak var Second4TextField: UITextField!
-    @IBOutlet weak var Third4TextField: UITextField!
-    @IBOutlet weak var Last4TextField: UITextField!
-   
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -27,10 +22,6 @@ class FTUCardNumberViewController: UIViewController {
     }
     
 
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-//        let destinationViewController = segue.destination as! FTUCardDetailsViewController
-//        destinationViewController.cardNumber = String(First4TextField.text! + Second4TextField.text! + Third4TextField.text! + Last4TextField.text!);
-    }
     /*
     // MARK: - Navigation
 

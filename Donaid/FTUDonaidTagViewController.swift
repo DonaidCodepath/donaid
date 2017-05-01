@@ -8,7 +8,7 @@
 
 import UIKit
 
-class DonaidTagViewController: UIViewController {
+class FTUDonaidTagViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
