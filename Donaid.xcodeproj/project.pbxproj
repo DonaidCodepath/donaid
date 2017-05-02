@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		67398F931EB6AC490046B5A6 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67398F921EB6AC490046B5A6 /* SearchViewController.swift */; };
+		67398F951EB6AD7B0046B5A6 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67398F941EB6AD7B0046B5A6 /* HomeViewController.swift */; };
+		67398F971EB6E64F0046B5A6 /* EventCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67398F961EB6E64F0046B5A6 /* EventCell.swift */; };
+		67398F991EB6EBD80046B5A6 /* HamburgerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67398F981EB6EBD80046B5A6 /* HamburgerViewController.swift */; };
 		A64D11BF5DA6D66F4013FD19 /* Pods_Donaid.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B11DC37F04DBBD40ECA4FA3 /* Pods_Donaid.framework */; };
 		CF16C3DE1EAEF85200AAECD7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF16C3DD1EAEF85200AAECD7 /* AppDelegate.swift */; };
 		CF16C3E01EAEF85200AAECD7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF16C3DF1EAEF85200AAECD7 /* ViewController.swift */; };
@@ -17,6 +21,10 @@
 
 /* Begin PBXFileReference section */
 		09CEB9FACAA8141452FE3678 /* Pods-Donaid.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Donaid.release.xcconfig"; path = "Pods/Target Support Files/Pods-Donaid/Pods-Donaid.release.xcconfig"; sourceTree = "<group>"; };
+		67398F921EB6AC490046B5A6 /* SearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		67398F941EB6AD7B0046B5A6 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		67398F961EB6E64F0046B5A6 /* EventCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventCell.swift; sourceTree = "<group>"; };
+		67398F981EB6EBD80046B5A6 /* HamburgerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HamburgerViewController.swift; sourceTree = "<group>"; };
 		6B11DC37F04DBBD40ECA4FA3 /* Pods_Donaid.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Donaid.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF16C3DA1EAEF85200AAECD7 /* Donaid.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Donaid.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF16C3DD1EAEF85200AAECD7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -84,6 +92,10 @@
 				CF16C3E41EAEF85200AAECD7 /* Assets.xcassets */,
 				CF16C3E61EAEF85200AAECD7 /* LaunchScreen.storyboard */,
 				CF16C3E91EAEF85200AAECD7 /* Info.plist */,
+				67398F921EB6AC490046B5A6 /* SearchViewController.swift */,
+				67398F941EB6AD7B0046B5A6 /* HomeViewController.swift */,
+				67398F961EB6E64F0046B5A6 /* EventCell.swift */,
+				67398F981EB6EBD80046B5A6 /* HamburgerViewController.swift */,
 			);
 			path = Donaid;
 			sourceTree = "<group>";
@@ -211,8 +223,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				67398F991EB6EBD80046B5A6 /* HamburgerViewController.swift in Sources */,
+				67398F931EB6AC490046B5A6 /* SearchViewController.swift in Sources */,
 				CF16C3E01EAEF85200AAECD7 /* ViewController.swift in Sources */,
+				67398F971EB6E64F0046B5A6 /* EventCell.swift in Sources */,
 				CF16C3DE1EAEF85200AAECD7 /* AppDelegate.swift in Sources */,
+				67398F951EB6AD7B0046B5A6 /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -339,10 +355,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Donaid/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.codepath.Donaid;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -352,10 +370,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Donaid/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.codepath.Donaid;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -378,6 +398,7 @@
 				CF16C3EE1EAEF85200AAECD7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
