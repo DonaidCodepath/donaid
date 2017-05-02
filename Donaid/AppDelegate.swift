@@ -15,8 +15,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
         
+        
+        if User.currentUser != nil {
+            print("Already a user")
+            let storyboard = UIStoryboard(name: "Main", bundle: nil)
+            let viewController = storyboard.instantiateViewController(withIdentifier: "FTUCardDetailsViewController")
+            
         let storyBoard = UIStoryboard.init(name: "Main", bundle: nil)
         let hamburgerVC = storyBoard.instantiateViewController(withIdentifier: "HamburgerViewController") as! HamburgerViewController
         //let homeVC = storyBoard.instantiateViewController(withIdentifier: "HomeViewController") as! HomeViewController
@@ -24,7 +29,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         hamburgerVC.contentViewController = homeNavigationController
         
-        self.window?.rootViewController = hamburgerVC
+            window?.rootViewController = viewController
+        }
         
         return true
     }
