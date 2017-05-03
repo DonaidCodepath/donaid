@@ -1,11 +1,12 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -37,7 +38,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1473" y="-294"/>
+            <point key="canvasLocation" x="-1329" y="139"/>
         </scene>
         <!--Phone Number View Controller-->
         <scene sceneID="ZVM-cB-Yxn">
@@ -688,85 +689,6 @@ Now your First Name, Please!</string>
             </objects>
             <point key="canvasLocation" x="3398" y="139"/>
         </scene>
-        <!--Hamburger View Controller-->
-        <scene sceneID="Snz-e1-n67">
-            <objects>
-                <viewController storyboardIdentifier="HamburgerViewController" id="2Yb-DS-vHc" customClass="HamburgerViewController" customModule="Donaid" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="afI-aN-kGq"/>
-                        <viewControllerLayoutGuide type="bottom" id="6fv-rV-0k8"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="ae9-mV-p8X">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h7s-8k-RJB">
-                                <rect key="frame" x="0.0" y="587" width="375" height="80"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="80" id="buU-u9-D3c"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" weight="thin" pointSize="25"/>
-                                <state key="normal" title="NEXT">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yv9-Oz-wWE">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="60"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="60" id="AMt-0W-4w7"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" weight="thin" pointSize="25"/>
-                                <state key="normal" title="   &lt;">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <segue destination="RnA-S6-6gK" kind="presentation" modalTransitionStyle="crossDissolve" id="bui-Ul-wzR"/>
-                                </connections>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Just one last step" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gK1-2S-54e">
-                                <rect key="frame" x="89" y="130" width="196" height="30"/>
-                                <fontDescription key="fontDescription" type="system" weight="thin" pointSize="25"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Donaid Tag" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6kc-Bb-tnq">
-                                <rect key="frame" x="122" y="238" width="131" height="30"/>
-                                <fontDescription key="fontDescription" type="system" weight="thin" pointSize="25"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="@DonaidTag" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hUg-To-Ahf">
-                                <rect key="frame" x="101" y="278" width="174" height="30"/>
-                                <color key="tintColor" red="0.0" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <color key="textColor" red="0.0" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                        </subviews>
-                        <color key="backgroundColor" red="0.0" green="0.65098039220000004" blue="0.64313725489999995" alpha="1" colorSpace="calibratedRGB"/>
-                        <constraints>
-                            <constraint firstItem="6kc-Bb-tnq" firstAttribute="leading" secondItem="aTp-8n-pCr" secondAttribute="leading" constant="122" id="1qO-Kv-C0e"/>
-                            <constraint firstItem="gK1-2S-54e" firstAttribute="top" secondItem="ukh-Ek-wva" secondAttribute="bottom" constant="110" id="95q-Kh-Erj"/>
-                            <constraint firstItem="Yv9-Oz-wWE" firstAttribute="top" secondItem="aTp-8n-pCr" secondAttribute="top" id="OL5-iu-aX0"/>
-                            <constraint firstAttribute="trailing" secondItem="6kc-Bb-tnq" secondAttribute="trailing" constant="122" id="QT8-7c-t74"/>
-                            <constraint firstItem="h7s-8k-RJB" firstAttribute="leading" secondItem="aTp-8n-pCr" secondAttribute="leading" id="SlF-5Q-FgQ"/>
-                            <constraint firstAttribute="trailing" secondItem="gK1-2S-54e" secondAttribute="trailing" constant="89.5" id="WiB-mP-rqh"/>
-                            <constraint firstAttribute="trailing" secondItem="hUg-To-Ahf" secondAttribute="trailing" constant="100.5" id="XbM-pj-EKm"/>
-                            <constraint firstItem="gK1-2S-54e" firstAttribute="leading" secondItem="aTp-8n-pCr" secondAttribute="leading" constant="89.5" id="fM9-5t-OUe"/>
-                            <constraint firstItem="6kc-Bb-tnq" firstAttribute="top" secondItem="ukh-Ek-wva" secondAttribute="bottom" constant="218" id="fUC-VW-GPq"/>
-                            <constraint firstItem="hUg-To-Ahf" firstAttribute="top" secondItem="6kc-Bb-tnq" secondAttribute="bottom" constant="10" id="fVZ-Sb-L6L"/>
-                            <constraint firstAttribute="trailing" secondItem="h7s-8k-RJB" secondAttribute="trailing" id="hcj-OU-bQU"/>
-                            <constraint firstItem="hUg-To-Ahf" firstAttribute="leading" secondItem="aTp-8n-pCr" secondAttribute="leading" constant="100.5" id="rrS-SK-jz8"/>
-                            <constraint firstItem="Yv9-Oz-wWE" firstAttribute="leading" secondItem="aTp-8n-pCr" secondAttribute="leading" id="sQt-Jv-BsQ"/>
-                            <constraint firstItem="q9n-IQ-qmb" firstAttribute="top" secondItem="h7s-8k-RJB" secondAttribute="bottom" id="tIf-BP-vpJ"/>
-                            <constraint firstAttribute="trailing" secondItem="Yv9-Oz-wWE" secondAttribute="trailing" id="wgO-Oy-3LN"/>
-                        </constraints>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="qyA-8g-An4" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="3397.5999999999999" y="138.98050974512745"/>
-        </scene>
         <!--Trending Events-->
         <scene sceneID="zDl-4t-hUG">
             <objects>
@@ -787,7 +709,7 @@ Now your First Name, Please!</string>
                                         <rect key="frame" x="0.0" y="28" width="375" height="118"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="hJ6-Gd-wwg" id="mUy-ex-IV2">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="117.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="118"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="8VE-sk-38U">
@@ -846,7 +768,7 @@ Now your First Name, Please!</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Wwb-fI-wXy" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="209" y="-716"/>
+            <point key="canvasLocation" x="5263" y="-295"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="kmt-Wa-OiY">
@@ -904,7 +826,7 @@ Now your First Name, Please!</string>
                                         <rect key="frame" x="0.0" y="28" width="375" height="118"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="97r-8f-W1E" id="bYt-42-a4Z">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="117.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="118"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="78i-eP-tII">
@@ -963,7 +885,7 @@ Now your First Name, Please!</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xo3-xy-oEY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="969" y="-1424"/>
+            <point key="canvasLocation" x="5287" y="454"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="cFP-xk-l2A">
@@ -981,7 +903,7 @@ Now your First Name, Please!</string>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CYS-FF-nCU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-530" y="-716"/>
+            <point key="canvasLocation" x="4401" y="-296"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="s9c-7c-slh">
@@ -999,7 +921,7 @@ Now your First Name, Please!</string>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LIc-HM-xQl" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4329" y="834"/>
+            <point key="canvasLocation" x="4401" y="454"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
@@ -1007,6 +929,5 @@ Now your First Name, Please!</string>
         <segue reference="45C-f2-ueO"/>
         <segue reference="2Cr-mr-gsK"/>
         <segue reference="76g-pB-wpn"/>
-        <segue reference="bxI-IC-d7Z"/>
     </inferredMetricsTieBreakers>
 </document>
