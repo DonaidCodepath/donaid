@@ -22,12 +22,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             let storyboard = UIStoryboard(name: "Main", bundle: nil)
             let viewController = storyboard.instantiateViewController(withIdentifier: "FTUCardDetailsViewController")
             
-        let storyBoard = UIStoryboard.init(name: "Main", bundle: nil)
-        let hamburgerVC = storyBoard.instantiateViewController(withIdentifier: "HamburgerViewController") as! HamburgerViewController
-        //let homeVC = storyBoard.instantiateViewController(withIdentifier: "HomeViewController") as! HomeViewController
-        let homeNavigationController = storyBoard.instantiateViewController(withIdentifier: "HomeNavigationController")
+            let storyBoard = UIStoryboard.init(name: "Main", bundle: nil)
+            let hamburgerVC = storyBoard.instantiateViewController(withIdentifier: "HamburgerViewController") as! HamburgerViewController
+            //let homeVC = storyBoard.instantiateViewController(withIdentifier: "HomeViewController") as! HomeViewController
+            let homeNavigationController = storyBoard.instantiateViewController(withIdentifier: "HomeNavigationController")
         
-        hamburgerVC.contentViewController = homeNavigationController
+            hamburgerVC.contentViewController = homeNavigationController
         
             window?.rootViewController = viewController
         }

@@ -887,6 +887,24 @@ Now your First Name, Please!</string>
             </objects>
             <point key="canvasLocation" x="5287" y="454"/>
         </scene>
+        <!--Hamburger View Controller-->
+        <scene sceneID="Vk9-P7-FrB">
+            <objects>
+                <viewController storyboardIdentifier="HamburgerViewController" id="BNj-gp-sna" customClass="HamburgerViewController" customModule="Donaid" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Q9e-5s-ZcP"/>
+                        <viewControllerLayoutGuide type="bottom" id="k3c-bT-Bi3"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="9cc-te-qeg">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="s1e-ya-zZC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4373" y="-1020"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="cFP-xk-l2A">
             <objects>
