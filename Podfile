@@ -6,7 +6,8 @@ target 'Donaid' do
   use_frameworks!
 
   # Pods for Donaid
-  pod 'AFNetworking'
+  pod 'AFNetworking', '3.0.0'
   pod 'Parse'
+  pod 'BDBOAuth1Manager', '2.0.0'
 
 end
