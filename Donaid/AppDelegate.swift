@@ -16,6 +16,18 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         
+
+        let storyBoard = UIStoryboard.init(name: "Main", bundle: nil)
+        
+        let hamburgerVC = storyBoard.instantiateViewController(withIdentifier: "HamburgerViewController") as! HamburgerViewController
+        let trendingNavigationController = storyBoard.instantiateViewController(withIdentifier: "HomeNavigationController")
+        let searchNavigationController = storyBoard.instantiateViewController(withIdentifier: "SearchNavigationController")
+        hamburgerVC.firstViewController = trendingNavigationController
+        hamburgerVC.secondViewController = searchNavigationController
+        hamburgerVC.contentViewController = trendingNavigationController
+        
+        //let loggedOutUserController = storyBoard.instantiateViewController(withIdentifier: "LoginViewCotroller")
+        
         let startFTU = false//User.currentUser?.isRegistered
         
         if (startFTU == true){
