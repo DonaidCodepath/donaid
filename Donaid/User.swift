@@ -12,19 +12,27 @@ class User: NSObject {
 
     static var _currentUser: User?
     
-    var firstName: String?
-    var donaidTag: String?
+    var firstName: String? = ""
+    var lastName: String? = ""
+    var phoneNumber: String? = ""
+    var verificationCode: String? = ""
+    var donaidTag: String? = ""
     var cards: [PaymentInfo] = []
-    var userAsDict : NSDictionary?
+    var userAsDict : NSDictionary? = [String : String]() as NSDictionary
+    var isRegistered : Bool = false
     
     init(dictionary: NSDictionary) {
         
-        userAsDict = dictionary
+        self.userAsDict = dictionary
         
-        firstName = dictionary["firstName"] as? String
-        donaidTag = dictionary["donaidTag"] as? String
+        self.phoneNumber = dictionary["phoneNumber"] as? String
+        self.firstName = dictionary["firstName"] as? String
+        self.donaidTag = dictionary["donaidTag"] as? String
         
-        //tagLine = dictionary["description"] as? String
+        if donaidTag != nil {
+            self.isRegistered = true
+        }
+            
     }
     
     class var currentUser : User? {
@@ -48,6 +56,7 @@ class User: NSObject {
             
             let defaults = UserDefaults.standard
             
+            defaults.removeObject(forKey: "currentUserDict")
             if let user = user {
                 let dataDict = try! JSONSerialization.data(withJSONObject: user.userAsDict!, options: [])
                 
