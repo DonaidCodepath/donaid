@@ -16,6 +16,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         
+
         let storyBoard = UIStoryboard.init(name: "Main", bundle: nil)
         
         let hamburgerVC = storyBoard.instantiateViewController(withIdentifier: "HamburgerViewController") as! HamburgerViewController
@@ -25,14 +26,31 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         hamburgerVC.secondViewController = searchNavigationController
         hamburgerVC.contentViewController = trendingNavigationController
         
-        let loggedOutUserController = storyBoard.instantiateViewController(withIdentifier: "LoginViewCotroller")
+        //let loggedOutUserController = storyBoard.instantiateViewController(withIdentifier: "LoginViewCotroller")
         
-        if User.currentUser != nil {
-            print("Already a user")
-            window?.rootViewController = hamburgerVC
+        let startFTU = false//User.currentUser?.isRegistered
+        
+        if (startFTU == true){
+            
+            let storyboard = UIStoryboard(name: "Main", bundle: nil)
+            let viewController = storyboard.instantiateViewController(withIdentifier: "LoginViewCotroller")
+            
+            window?.rootViewController = viewController
         } else {
+            print("Already a user")
+            let userDict: NSDictionary = [String : String]() as NSDictionary
+            let newUser: User = User(dictionary: userDict)
+            User.currentUser = newUser
+            
+            let storyBoard = UIStoryboard.init(name: "Main", bundle: nil)
+            let hamburgerVC = storyBoard.instantiateViewController(withIdentifier: "HamburgerViewController") as! HamburgerViewController
+            //let homeVC = storyBoard.instantiateViewController(withIdentifier: "HomeViewController") as! HomeViewController
+            let homeNavigationController = storyBoard.instantiateViewController(withIdentifier: "HomeNavigationController")
+            hamburgerVC.contentViewController = homeNavigationController
+            
             window?.rootViewController = hamburgerVC
         }
+
         
         return true
     }
