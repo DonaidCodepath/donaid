@@ -9,10 +9,11 @@
 import UIKit
 
 class HamburgerViewController: UIViewController {
-
-    @IBOutlet weak var contentView: UIView!
     
     @IBOutlet weak var newContentView: UIView!
+    
+    var firstViewController: UIViewController?
+    var secondViewController: UIViewController?
     
     var contentViewController: UIViewController! {
         didSet(oldContentViewController)  {
@@ -35,6 +36,13 @@ class HamburgerViewController: UIViewController {
 
         // Do any additional setup after loading the view.
     }
+    
+    @IBAction func onTrendingTapped(_ sender: Any) {
+        //contentViewController
+    }
+    
+    
+    
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

@@ -17,17 +17,19 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         
         let storyBoard = UIStoryboard.init(name: "Main", bundle: nil)
+        
         let hamburgerVC = storyBoard.instantiateViewController(withIdentifier: "HamburgerViewController") as! HamburgerViewController
-        //let homeVC = storyBoard.instantiateViewController(withIdentifier: "HomeViewController") as! HomeViewController
-        let homeNavigationController = storyBoard.instantiateViewController(withIdentifier: "HomeNavigationController")
-        hamburgerVC.contentViewController = homeNavigationController
+        let trendingNavigationController = storyBoard.instantiateViewController(withIdentifier: "HomeNavigationController")
+        let searchNavigationController = storyBoard.instantiateViewController(withIdentifier: "SearchNavigationController")
+        hamburgerVC.firstViewController = trendingNavigationController
+        hamburgerVC.secondViewController = searchNavigationController
+        hamburgerVC.contentViewController = trendingNavigationController
+        
+        let loggedOutUserController = storyBoard.instantiateViewController(withIdentifier: "LoginViewCotroller")
         
         if User.currentUser != nil {
             print("Already a user")
-            let storyboard = UIStoryboard(name: "Main", bundle: nil)
-            let viewController = storyboard.instantiateViewController(withIdentifier: "FTUCardDetailsViewController")
-            
-            window?.rootViewController = viewController
+            window?.rootViewController = hamburgerVC
         } else {
             window?.rootViewController = hamburgerVC
         }

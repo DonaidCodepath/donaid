@@ -936,36 +936,52 @@ Now your First Name, Please!</string>
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="15a-vA-Cha">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="584"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="15a-vA-Cha">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="593"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mby-PC-yEK">
                                 <rect key="frame" x="0.0" y="592" width="375" height="75"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Oc2-RJ-0Jk">
-                                        <rect key="frame" x="55" y="22" width="57" height="30"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <state key="normal" title="Button 1"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Oc2-RJ-0Jk">
+                                        <rect key="frame" x="55" y="7" width="60" height="60"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="60" id="RP6-E3-SwF"/>
+                                            <constraint firstAttribute="width" constant="60" id="aTF-Iw-D5K"/>
+                                        </constraints>
+                                        <state key="normal" title="Trend"/>
+                                        <connections>
+                                            <action selector="onTrendingTapped:" destination="BNj-gp-sna" eventType="touchUpInside" id="MD9-Q8-nwD"/>
+                                        </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sO1-xa-7CO">
-                                        <rect key="frame" x="267" y="22" width="59" height="30"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <state key="normal" title="Button 2"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sO1-xa-7CO">
+                                        <rect key="frame" x="260" y="7" width="60" height="60"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="60" id="mMn-E4-bel"/>
+                                            <constraint firstAttribute="height" constant="60" id="rwE-n0-7M7"/>
+                                        </constraints>
+                                        <state key="normal" title="Search"/>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="sO1-xa-7CO" secondAttribute="trailing" constant="55" id="18V-TR-6KA"/>
+                                    <constraint firstItem="Oc2-RJ-0Jk" firstAttribute="leading" secondItem="mby-PC-yEK" secondAttribute="leading" constant="55" id="GBC-0d-ezi"/>
                                     <constraint firstAttribute="height" constant="75" id="L5Y-s6-YzG"/>
+                                    <constraint firstItem="Oc2-RJ-0Jk" firstAttribute="top" secondItem="mby-PC-yEK" secondAttribute="top" constant="7" id="S8T-2p-XtG"/>
+                                    <constraint firstItem="sO1-xa-7CO" firstAttribute="top" secondItem="mby-PC-yEK" secondAttribute="top" constant="7" id="mGG-v6-YTO"/>
                                 </constraints>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstAttribute="trailing" secondItem="15a-vA-Cha" secondAttribute="trailing" id="LYW-y5-mfP"/>
+                            <constraint firstItem="15a-vA-Cha" firstAttribute="leading" secondItem="9cc-te-qeg" secondAttribute="leading" id="UGU-Fk-WLv"/>
                             <constraint firstAttribute="trailing" secondItem="mby-PC-yEK" secondAttribute="trailing" id="Uv3-uT-PxN"/>
                             <constraint firstItem="k3c-bT-Bi3" firstAttribute="top" secondItem="mby-PC-yEK" secondAttribute="bottom" id="VxE-5l-Ee6"/>
                             <constraint firstItem="mby-PC-yEK" firstAttribute="leading" secondItem="9cc-te-qeg" secondAttribute="leading" id="oiq-kO-9Co"/>
+                            <constraint firstItem="mby-PC-yEK" firstAttribute="top" secondItem="15a-vA-Cha" secondAttribute="bottom" constant="-1" id="u9Y-PB-8fA"/>
+                            <constraint firstItem="15a-vA-Cha" firstAttribute="top" secondItem="9cc-te-qeg" secondAttribute="top" id="vLN-g8-Q0k"/>
                         </constraints>
                     </view>
                     <connections>
@@ -997,7 +1013,7 @@ Now your First Name, Please!</string>
         <!--Navigation Controller-->
         <scene sceneID="s9c-7c-slh">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="ovR-iM-UGc" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="SearchNavigationController" automaticallyAdjustsScrollViewInsets="NO" id="ovR-iM-UGc" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="sVs-Mn-iVM">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
