@@ -34,7 +34,7 @@ class HDXApplication: NSObject {
             let sentences = totalSummary.components(separatedBy: ".")
             appSummary = sentences[0]
         } else {
-            appSummary = ""
+            appSummary = "No summary available"
         }
     }
     
