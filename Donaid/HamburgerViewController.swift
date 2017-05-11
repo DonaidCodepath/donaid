@@ -12,6 +12,8 @@ class HamburgerViewController: UIViewController {
 
     @IBOutlet weak var contentView: UIView!
     
+    @IBOutlet weak var newContentView: UIView!
+    
     var contentViewController: UIViewController! {
         didSet(oldContentViewController)  {
             view.layoutIfNeeded()
@@ -23,7 +25,7 @@ class HamburgerViewController: UIViewController {
             }
             self.addChildViewController(contentViewController)
             contentViewController.willMove(toParentViewController: self)
-            contentView.addSubview(contentViewController.view)
+            newContentView.addSubview(contentViewController.view)
             contentViewController.didMove(toParentViewController: self)
         }
     }
