@@ -1,11 +1,11 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="0r3-3j-r5y">
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1421" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="0r3-3j-r5y">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -771,7 +771,7 @@ Now your First Name, Please!</string>
                                         <rect key="frame" x="0.0" y="28" width="375" height="118"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="hJ6-Gd-wwg" id="mUy-ex-IV2">
-                                            <rect key="frame" x="0.0" y="0.0" width="342" height="117.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="342" height="117"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="8VE-sk-38U">
@@ -844,7 +844,7 @@ Now your First Name, Please!</string>
                                         <rect key="frame" x="0.0" y="28" width="375" height="116"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="AXJ-BF-UK6" id="QU4-xQ-a8J">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="115.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="115"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lbH-sF-Jv7">
@@ -913,53 +913,34 @@ Now your First Name, Please!</string>
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="awK-Or-gzW">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="128" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="awK-Or-gzW">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="EventCell" rowHeight="118" id="97r-8f-W1E" customClass="EventCell" customModule="Donaid" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="375" height="118"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ProjectCell" id="oee-XS-UuM" customClass="ProjectCell" customModule="Donaid" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="128"/>
                                         <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="97r-8f-W1E" id="bYt-42-a4Z">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="117.5"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="oee-XS-UuM" id="qzP-W5-jq5">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="127"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="78i-eP-tII">
-                                                    <rect key="frame" x="8" y="8" width="104" height="101"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="width" constant="104" id="Fbe-ho-eyg"/>
-                                                        <constraint firstAttribute="height" constant="101" id="hZ1-XP-XhX"/>
-                                                    </constraints>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qc5-1a-vOA">
+                                                    <rect key="frame" x="8" y="14" width="96" height="98"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Description of the crisis" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Kf-1C-IXL">
-                                                    <rect key="frame" x="120" y="39" width="238" height="21"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Syrian Refugee Search" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RwB-wO-fhl">
+                                                    <rect key="frame" x="112" y="14" width="174" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Syrian Refugee Crisis" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ytR-cj-Bm2">
-                                                    <rect key="frame" x="120" y="8" width="238" height="23"/>
-                                                    <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="19"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
                                             </subviews>
-                                            <constraints>
-                                                <constraint firstAttribute="bottomMargin" relation="greaterThanOrEqual" secondItem="9Kf-1C-IXL" secondAttribute="bottom" constant="12" id="SD2-VR-yxH"/>
-                                                <constraint firstAttribute="topMargin" secondItem="78i-eP-tII" secondAttribute="top" id="ZnV-Mp-Dsc"/>
-                                                <constraint firstItem="9Kf-1C-IXL" firstAttribute="leading" secondItem="ytR-cj-Bm2" secondAttribute="leading" id="aoC-Yu-vIF"/>
-                                                <constraint firstAttribute="trailingMargin" secondItem="ytR-cj-Bm2" secondAttribute="trailing" constant="9" id="deU-JR-Dcy"/>
-                                                <constraint firstItem="ytR-cj-Bm2" firstAttribute="leading" secondItem="78i-eP-tII" secondAttribute="trailing" constant="8" id="lJU-xy-tGX"/>
-                                                <constraint firstAttribute="trailingMargin" secondItem="9Kf-1C-IXL" secondAttribute="trailing" constant="9" id="oG4-wb-Mzn"/>
-                                                <constraint firstItem="9Kf-1C-IXL" firstAttribute="top" secondItem="ytR-cj-Bm2" secondAttribute="bottom" constant="8" id="oz4-rq-hnK"/>
-                                                <constraint firstItem="ytR-cj-Bm2" firstAttribute="top" secondItem="78i-eP-tII" secondAttribute="top" id="qcB-c1-7US"/>
-                                                <constraint firstAttribute="leadingMargin" secondItem="78i-eP-tII" secondAttribute="leading" id="yC4-6B-CV9"/>
-                                            </constraints>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <outlet property="eventDescription" destination="9Kf-1C-IXL" id="5VM-23-UPV"/>
-                                            <outlet property="eventImage" destination="78i-eP-tII" id="jPw-k6-YSf"/>
-                                            <outlet property="eventTitle" destination="ytR-cj-Bm2" id="vae-nd-cnz"/>
+                                            <outlet property="countryImage" destination="qc5-1a-vOA" id="x7O-LL-Slh"/>
+                                            <outlet property="projectImage" destination="qc5-1a-vOA" id="IWY-Wu-4mC"/>
+                                            <outlet property="textlabel" destination="RwB-wO-fhl" id="Uhx-xH-0yZ"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -980,7 +961,7 @@ Now your First Name, Please!</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xo3-xy-oEY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5287" y="454"/>
+            <point key="canvasLocation" x="5285.6000000000004" y="453.82308845577217"/>
         </scene>
         <!--Hamburger View Controller-->
         <scene sceneID="Vk9-P7-FrB">
@@ -1019,6 +1000,9 @@ Now your First Name, Please!</string>
                                             <constraint firstAttribute="height" constant="60" id="rwE-n0-7M7"/>
                                         </constraints>
                                         <state key="normal" title="Search"/>
+                                        <connections>
+                                            <action selector="onSearchTapped:" destination="BNj-gp-sna" eventType="touchUpInside" id="FzQ-eH-Ry6"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>

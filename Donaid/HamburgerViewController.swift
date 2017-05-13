@@ -33,15 +33,29 @@ class HamburgerViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        let storyBoard = UIStoryboard.init(name: "Main", bundle: nil)
+        
+        //let hamburgerVC = storyBoard.instantiateViewController(withIdentifier: "HamburgerViewController") as! HamburgerViewController
+        let trendingNavigationController = storyBoard.instantiateViewController(withIdentifier: "HomeNavigationController")
+        let searchNavigationController = storyBoard.instantiateViewController(withIdentifier: "SearchNavigationController")
+        
+        firstViewController = trendingNavigationController
+        secondViewController = searchNavigationController
+        contentViewController = secondViewController
 
         // Do any additional setup after loading the view.
     }
     
     @IBAction func onTrendingTapped(_ sender: Any) {
-        //contentViewController
+        contentViewController = firstViewController
+
     }
     
     
+    @IBAction func onSearchTapped(_ sender: Any) {
+        contentViewController = secondViewController
+    }
     
 
     override func didReceiveMemoryWarning() {
