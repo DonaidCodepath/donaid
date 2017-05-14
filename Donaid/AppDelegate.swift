@@ -33,7 +33,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         if (startFTU == true){
             
             let storyboard = UIStoryboard(name: "Main", bundle: nil)
-            let viewController = storyboard.instantiateViewController(withIdentifier: "LoginViewCotroller")
+            let viewController = storyboard.instantiateViewController(withIdentifier: "LoginViewController")
             
             window?.rootViewController = viewController
         } else {

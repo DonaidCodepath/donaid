@@ -15,6 +15,8 @@
 		464F9B241EB7186B00C3DA70 /* FTUPhoneNumberViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 464F9B231EB7186B00C3DA70 /* FTUPhoneNumberViewController.swift */; };
 		464F9B261EB7189C00C3DA70 /* FTUVerificationcodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 464F9B251EB7189C00C3DA70 /* FTUVerificationcodeViewController.swift */; };
 		464F9B281EB718B000C3DA70 /* FTUFirstNameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 464F9B271EB718B000C3DA70 /* FTUFirstNameViewController.swift */; };
+		46A430311EC7B78F00049043 /* numpad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 46A430301EC7B78F00049043 /* numpad.xib */; };
+		46A430331EC7B8CF00049043 /* numpad.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46A430321EC7B8CF00049043 /* numpad.swift */; };
 		67398F931EB6AC490046B5A6 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67398F921EB6AC490046B5A6 /* SearchViewController.swift */; };
 		67398F951EB6AD7B0046B5A6 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67398F941EB6AD7B0046B5A6 /* HomeViewController.swift */; };
 		67398F971EB6E64F0046B5A6 /* EventCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67398F961EB6E64F0046B5A6 /* EventCell.swift */; };
@@ -45,6 +47,8 @@
 		464F9B231EB7186B00C3DA70 /* FTUPhoneNumberViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FTUPhoneNumberViewController.swift; sourceTree = "<group>"; };
 		464F9B251EB7189C00C3DA70 /* FTUVerificationcodeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FTUVerificationcodeViewController.swift; sourceTree = "<group>"; };
 		464F9B271EB718B000C3DA70 /* FTUFirstNameViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FTUFirstNameViewController.swift; sourceTree = "<group>"; };
+		46A430301EC7B78F00049043 /* numpad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = numpad.xib; sourceTree = "<group>"; };
+		46A430321EC7B8CF00049043 /* numpad.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = numpad.swift; sourceTree = "<group>"; };
 		67398F921EB6AC490046B5A6 /* SearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		67398F941EB6AD7B0046B5A6 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		67398F961EB6E64F0046B5A6 /* EventCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventCell.swift; sourceTree = "<group>"; };
@@ -120,6 +124,8 @@
 		464F9B201EB7126100C3DA70 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				46A430301EC7B78F00049043 /* numpad.xib */,
+				46A430321EC7B8CF00049043 /* numpad.swift */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -215,6 +221,7 @@
 				TargetAttributes = {
 					CF16C3D91EAEF85100AAECD7 = {
 						CreatedOnToolsVersion = 8.3;
+						DevelopmentTeam = TXRHXEKMF7;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -242,6 +249,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				46A430311EC7B78F00049043 /* numpad.xib in Resources */,
 				CF16C3E81EAEF85200AAECD7 /* LaunchScreen.storyboard in Resources */,
 				CF16C3E51EAEF85200AAECD7 /* Assets.xcassets in Resources */,
 				CF16C3E31EAEF85200AAECD7 /* Main.storyboard in Resources */,
@@ -303,6 +311,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				46A430331EC7B8CF00049043 /* numpad.swift in Sources */,
 				464F9B241EB7186B00C3DA70 /* FTUPhoneNumberViewController.swift in Sources */,
 				67E4A53A1EC8B98B001282DA /* ProjectCell.swift in Sources */,
 				67E030F31EC3F8BF005DA303 /* FTUViewController.swift in Sources */,
@@ -450,6 +459,7 @@
 			baseConfigurationReference = EC408D8CD0D18793C745B2A3 /* Pods-Donaid.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = TXRHXEKMF7;
 				INFOPLIST_FILE = Donaid/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -465,6 +475,7 @@
 			baseConfigurationReference = 09CEB9FACAA8141452FE3678 /* Pods-Donaid.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = TXRHXEKMF7;
 				INFOPLIST_FILE = Donaid/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
