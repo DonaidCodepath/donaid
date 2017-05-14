@@ -19,6 +19,8 @@ class HDXProject: NSObject {
     var beneficiaries: Int = 0
     var agencyName: String?
     var agencyId: Int = 0
+    var projectStatus: String?
+    
     
     init(dictionary: NSDictionary) {
         issueId = dictionary["projectID"] as? String
@@ -30,6 +32,7 @@ class HDXProject: NSObject {
         beneficiaries = (dictionary["beneficiariesTotal"] as? Int) ?? 0
         agencyName = dictionary["agencyName"] as? String
         agencyId = (dictionary["agencyID"] as? Int) ?? 0
+        projectStatus = dictionary["projectStatus"] as? String
     }
     
     class func issuesWithArray(array: [NSDictionary]) -> [HDXProject] {
