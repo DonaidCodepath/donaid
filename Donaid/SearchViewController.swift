@@ -8,18 +8,36 @@
 
 import UIKit
 
-class SearchViewController: UIViewController, UISearchBarDelegate{
-    //, UITableViewDataSource, UITableViewDelegate
-    var searchBar: UISearchBar?
+class SearchViewController: UIViewController, UISearchBarDelegate, UITableViewDataSource, UITableViewDelegate {
     
-        override func viewDidLoad() {
+    @IBOutlet weak var tableView: UITableView!
+    
+    var searchBar: UISearchBar?
+    var projects: [HDXProject]!
+    
+    override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-//        tableView.delegate = self
-//        tableView.dataSource = self
+        tableView.delegate = self
+        tableView.dataSource = self
+        tableView.rowHeight = UITableViewAutomaticDimension
+        tableView.estimatedRowHeight = 120
         
+        HDXClient.sharedInstance.getHDXProjectByYear(year: "2016", success: { (projects: [HDXProject]) in
+            self.projects = projects
+        }) { (error: Error) in
+            print("HDX Client error")
+        }
         
+        HDXClient.sharedInstance.getHDXProjectByYear(year: "2017", success: { (projects: [HDXProject]) in
+            self.projects = self.projects + projects
+        }) { (error: Error) in
+            print("HDX Client error")
+        }
+        tableView.reloadData()
+        
+        createSearchBar()
     }
 
     override func didReceiveMemoryWarning() {
@@ -34,16 +52,16 @@ class SearchViewController: UIViewController, UISearchBarDelegate{
         navigationItem.titleView = searchBar
     }
     
-//    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-//        let cell = tableView.dequeueReusableCell(withIdentifier: "EventCell", for: indexPath) as! EventCell
-//        
-//        return cell
-//    }
-//    
-//
-//    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-//        return 20
-//    }
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "ProjectCell", for: indexPath) as! ProjectCell
+        
+        return cell
+    }
+    
+
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 20
+    }
 
     /*
     // MARK: - Navigation

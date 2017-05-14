@@ -23,6 +23,7 @@
 		67E030F51EC3F8F8005DA303 /* HDXApplication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67E030F41EC3F8F8005DA303 /* HDXApplication.swift */; };
 		67E030F71EC3F916005DA303 /* HDXClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67E030F61EC3F916005DA303 /* HDXClient.swift */; };
 		67E030F91EC3F921005DA303 /* HDXProject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67E030F81EC3F921005DA303 /* HDXProject.swift */; };
+		67E4A53A1EC8B98B001282DA /* ProjectCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67E4A5391EC8B98B001282DA /* ProjectCell.swift */; };
 		A64D11BF5DA6D66F4013FD19 /* Pods_Donaid.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B11DC37F04DBBD40ECA4FA3 /* Pods_Donaid.framework */; };
 		CF16C3DE1EAEF85200AAECD7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF16C3DD1EAEF85200AAECD7 /* AppDelegate.swift */; };
 		CF16C3E31EAEF85200AAECD7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF16C3E11EAEF85200AAECD7 /* Main.storyboard */; };
@@ -52,6 +53,7 @@
 		67E030F41EC3F8F8005DA303 /* HDXApplication.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HDXApplication.swift; sourceTree = "<group>"; };
 		67E030F61EC3F916005DA303 /* HDXClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HDXClient.swift; sourceTree = "<group>"; };
 		67E030F81EC3F921005DA303 /* HDXProject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HDXProject.swift; sourceTree = "<group>"; };
+		67E4A5391EC8B98B001282DA /* ProjectCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProjectCell.swift; sourceTree = "<group>"; };
 		6B11DC37F04DBBD40ECA4FA3 /* Pods_Donaid.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Donaid.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF16C3DA1EAEF85200AAECD7 /* Donaid.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Donaid.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF16C3DD1EAEF85200AAECD7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -173,6 +175,7 @@
 				67398F941EB6AD7B0046B5A6 /* HomeViewController.swift */,
 				67398F961EB6E64F0046B5A6 /* EventCell.swift */,
 				67398F981EB6EBD80046B5A6 /* HamburgerViewController.swift */,
+				67E4A5391EC8B98B001282DA /* ProjectCell.swift */,
 			);
 			path = Donaid;
 			sourceTree = "<group>";
@@ -301,6 +304,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				464F9B241EB7186B00C3DA70 /* FTUPhoneNumberViewController.swift in Sources */,
+				67E4A53A1EC8B98B001282DA /* ProjectCell.swift in Sources */,
 				67E030F31EC3F8BF005DA303 /* FTUViewController.swift in Sources */,
 				464F9B1E1EB7119F00C3DA70 /* DonaidParse.swift in Sources */,
 				CFAEEE361EB68B0100CA7AD2 /* FTUCardDetailsViewController.swift in Sources */,
