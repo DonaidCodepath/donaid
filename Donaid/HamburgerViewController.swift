@@ -35,13 +35,24 @@ class HamburgerViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        let storyBoard = UIStoryboard.init(name: "Main", bundle: nil)
+        let trendingNavigationController = storyBoard.instantiateViewController(withIdentifier: "HomeNavigationController")
+        let searchNavigationController = storyBoard.instantiateViewController(withIdentifier: "SearchNavigationController")
+        firstViewController = trendingNavigationController
+        secondViewController = searchNavigationController
+        contentViewController = trendingNavigationController
     }
     
     @IBAction func onTrendingTapped(_ sender: Any) {
-        //contentViewController
+        print("Trend tapped")
+        contentViewController = firstViewController
     }
     
     
+    @IBAction func onSearchTapped(_ sender: Any) {
+        print("Search tapped")
+        contentViewController = secondViewController
+    }
     
 
     override func didReceiveMemoryWarning() {

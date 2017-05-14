@@ -8,18 +8,17 @@
 
 import UIKit
 
-class SearchViewController: UIViewController, UISearchBarDelegate, UITableViewDataSource, UITableViewDelegate {
-    
+class SearchViewController: UIViewController, UISearchBarDelegate{
+    //, UITableViewDataSource, UITableViewDelegate
     var searchBar: UISearchBar?
     
-    @IBOutlet weak var tableView: UITableView!
-
-    override func viewDidLoad() {
+        override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        tableView.delegate = self
-        tableView.dataSource = self
+//        tableView.delegate = self
+//        tableView.dataSource = self
+        
         
     }
 
@@ -35,16 +34,16 @@ class SearchViewController: UIViewController, UISearchBarDelegate, UITableViewDa
         navigationItem.titleView = searchBar
     }
     
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "EventCell", for: indexPath) as! EventCell
-        
-        return cell
-    }
-    
-
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 20
-    }
+//    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+//        let cell = tableView.dequeueReusableCell(withIdentifier: "EventCell", for: indexPath) as! EventCell
+//        
+//        return cell
+//    }
+//    
+//
+//    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+//        return 20
+//    }
 
     /*
     // MARK: - Navigation
