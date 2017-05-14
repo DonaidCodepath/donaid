@@ -788,7 +788,7 @@ Add you card number here.</string>
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="117.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="YRS-cT-Vlv">
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="syria" translatesAutoresizingMaskIntoConstraints="NO" id="YRS-cT-Vlv">
                                                     <rect key="frame" x="16" y="10" width="98" height="97"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 </imageView>
@@ -1094,6 +1094,10 @@ Add you card number here.</string>
             <point key="canvasLocation" x="4401" y="454"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="card" width="223" height="142"/>
+        <image name="syria" width="262" height="254"/>
+    </resources>
     <inferredMetricsTieBreakers>
         <segue reference="cDZ-f5-S8b"/>
         <segue reference="ZB8-Eh-efw"/>
