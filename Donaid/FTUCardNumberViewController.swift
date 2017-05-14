@@ -15,9 +15,15 @@ class FTUCardNumberViewController: UIViewController {
     @IBOutlet weak var Third4TextField: UITextField!
     @IBOutlet weak var Last4TextField: UITextField!
    
+    @IBOutlet weak var welcomeMessage: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        let defaults = UserDefaults.standard
+        
+        let userName = defaults.object(forKey: "currentUserFirstName") as? String
+        welcomeMessage.text = "Hello " + userName! + ","
         // Do any additional setup after loading the view.
     }
 

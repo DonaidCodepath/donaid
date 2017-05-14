@@ -8,12 +8,65 @@
 
 import UIKit
 
-class FTUVerificationcodeViewController: UIViewController {
+class FTUVerificationcodeViewController: UIViewController, numpadDelegate {
 
+    
+    @IBOutlet weak var Code1: UITextField!
+    @IBOutlet weak var Code2: UITextField!
+    @IBOutlet weak var Code3: UITextField!
+    @IBOutlet weak var Code4: UITextField!
+    
+    weak var numpad: numpad?
+    
+    @IBOutlet weak var numpadView: UIView!
+    var fullCode:String!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        if let numView = Bundle.main.loadNibNamed("numpad", owner: self, options: nil)?.first as? numpad {
+            numView.delegate = self
+            numpadView.addSubview(numView)
+        }
+    }
+    
+    func buttonClicked(sender: numpad, num: String) {
+        
+        if (num != "BACKSPACE") {
+            if (fullCode == nil) {
+                fullCode = num
+            }
+            else if (fullCode.characters.count > 0 && fullCode.characters.count < 4) {
+                fullCode = fullCode + num
+            }
+        }
+        else {
+            if (fullCode != nil && fullCode.characters.count > 0) {
+                fullCode.remove(at: fullCode.index(before: fullCode.endIndex))
+            }
+        }
 
-        // Do any additional setup after loading the view.
+        if (fullCode != nil) {
+            let code:String = fullCode
+            if (fullCode.characters.count > 0 && fullCode.characters.count <= 4) {
+                if (fullCode.characters.count > 3) {
+                    let char4 = code[code.index(code.startIndex, offsetBy: 3)]
+                    Code4.text = String(char4)
+                }
+                if (fullCode.characters.count > 2) {
+                    let char3 = code[code.index(code.startIndex, offsetBy: 2)]
+                    Code3.text = String(char3)
+                }
+                if (fullCode.characters.count > 1) {
+                    let char2 = code[code.index(code.startIndex, offsetBy: 1)]
+                    Code2.text = String(char2)
+                }
+                if (fullCode.characters.count > 0) {
+                    let char1 = code[code.index(code.startIndex, offsetBy: 0)]
+                    Code1.text = String(char1)
+                }
+            }
+        }
     }
 
     override func didReceiveMemoryWarning() {

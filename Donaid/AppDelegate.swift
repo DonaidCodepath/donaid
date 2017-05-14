@@ -28,12 +28,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         //let loggedOutUserController = storyBoard.instantiateViewController(withIdentifier: "LoginViewCotroller")
         
-        let startFTU = false//User.currentUser?.isRegistered
+        let startFTU = true//User.currentUser?.isRegistered
         
         if (startFTU == true){
             
             let storyboard = UIStoryboard(name: "Main", bundle: nil)
-            let viewController = storyboard.instantiateViewController(withIdentifier: "LoginViewCotroller")
+            let viewController = storyboard.instantiateViewController(withIdentifier: "LoginViewController")
             
             window?.rootViewController = viewController
         } else {
