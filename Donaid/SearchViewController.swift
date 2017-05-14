@@ -13,7 +13,8 @@ class SearchViewController: UIViewController, UISearchBarDelegate, UITableViewDa
     @IBOutlet weak var tableView: UITableView!
     
     var searchBar: UISearchBar?
-    var projects: [HDXProject]!
+    var projects2016: [HDXProject]!
+    var projects2017: [HDXProject]!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -24,18 +25,25 @@ class SearchViewController: UIViewController, UISearchBarDelegate, UITableViewDa
         tableView.rowHeight = UITableViewAutomaticDimension
         tableView.estimatedRowHeight = 120
         
-        HDXClient.sharedInstance.getHDXProjectByYear(year: "2016", success: { (projects: [HDXProject]) in
-            self.projects = projects
+        HDXClient.sharedInstance?.getHDXProjectByYear(year: "2016", success: { (projects: [HDXProject]) in
+            self.projects2016 = projects
+            self.tableView.reloadData()
         }) { (error: Error) in
             print("HDX Client error")
         }
         
-        HDXClient.sharedInstance.getHDXProjectByYear(year: "2017", success: { (projects: [HDXProject]) in
-            self.projects = self.projects + projects
+        HDXClient.sharedInstance?.getHDXProjectByYear(year: "2017", success: { (projects: [HDXProject]) in
+            self.projects2017 = projects
+            
+            self.tableView.reloadData()
         }) { (error: Error) in
             print("HDX Client error")
         }
-        tableView.reloadData()
+        
+        
+//        count = projects.count ?? 0
+//        
+//        print("num projects is: \(count)")
         
         createSearchBar()
     }

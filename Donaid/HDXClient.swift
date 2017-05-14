@@ -11,7 +11,8 @@ import BDBOAuth1Manager
 
 class HDXClient: BDBOAuth1SessionManager {
     
-    static let sharedInstance = HDXClient(baseURL: NSURL(string: "http://cerfgms-webapi.unocha.org")! as URL!)
+    //static let sharedInstance = HDXClient(baseURL:
+    static let sharedInstance = HDXClient(baseURL: NSURL(string: "https://cerfgms-webapi.unocha.org")! as URL!, consumerKey: nil, consumerSecret: nil)
     
     
     
