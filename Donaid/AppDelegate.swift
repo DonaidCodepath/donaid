@@ -21,7 +21,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         let hamburgerVC = storyBoard.instantiateViewController(withIdentifier: "HamburgerViewController") as! HamburgerViewController
         let trendingNavigationController = storyBoard.instantiateViewController(withIdentifier: "HomeNavigationController")
-        let searchNavigationController = storyBoard.instantiateViewController(withIdentifier: "SearchNavigationController")
+        let searchNavigationController = storyBoard.instantiateViewController(withIdentifier: "ProjectSearchNavigationController")
         hamburgerVC.firstViewController = trendingNavigationController
         hamburgerVC.secondViewController = searchNavigationController
         hamburgerVC.contentViewController = trendingNavigationController

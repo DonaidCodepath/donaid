@@ -1,19 +1,18 @@
 //
-//  SearchViewController.swift
+//  ProjectSearchViewController.swift
 //  Donaid
 //
-//  Created by Mendoza, Alejandro on 4/30/17.
+//  Created by Mendoza, Alejandro on 5/13/17.
 //  Copyright © 2017 Donaid Codepath. All rights reserved.
 //
 
 import UIKit
 
-class SearchViewController: UIViewController, UISearchBarDelegate, UITableViewDataSource, UITableViewDelegate {
-    
+class ProjectSearchViewController: UIViewController, UITableViewDataSource, UITableViewDelegate, UISearchBarDelegate {
+
+    @IBOutlet weak var tableView: UITableView!
     var searchBar: UISearchBar?
     
-    @IBOutlet weak var tableView: UITableView!
-
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -21,11 +20,7 @@ class SearchViewController: UIViewController, UISearchBarDelegate, UITableViewDa
         tableView.delegate = self
         tableView.dataSource = self
         
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+        createSearchBar()
     }
     
     func createSearchBar() {
@@ -34,14 +29,19 @@ class SearchViewController: UIViewController, UISearchBarDelegate, UITableViewDa
         searchBar?.delegate = self
         navigationItem.titleView = searchBar
     }
+
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+        // Dispose of any resources that can be recreated.
+    }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "EventCell", for: indexPath) as! EventCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: "ProjectCell", for: indexPath) as! ProjectCell
         
         return cell
     }
     
-
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 20
     }

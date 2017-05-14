@@ -15,10 +15,10 @@
 		464F9B241EB7186B00C3DA70 /* FTUPhoneNumberViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 464F9B231EB7186B00C3DA70 /* FTUPhoneNumberViewController.swift */; };
 		464F9B261EB7189C00C3DA70 /* FTUVerificationcodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 464F9B251EB7189C00C3DA70 /* FTUVerificationcodeViewController.swift */; };
 		464F9B281EB718B000C3DA70 /* FTUFirstNameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 464F9B271EB718B000C3DA70 /* FTUFirstNameViewController.swift */; };
-		67398F931EB6AC490046B5A6 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67398F921EB6AC490046B5A6 /* SearchViewController.swift */; };
 		67398F951EB6AD7B0046B5A6 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67398F941EB6AD7B0046B5A6 /* HomeViewController.swift */; };
 		67398F971EB6E64F0046B5A6 /* EventCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67398F961EB6E64F0046B5A6 /* EventCell.swift */; };
 		67398F991EB6EBD80046B5A6 /* HamburgerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67398F981EB6EBD80046B5A6 /* HamburgerViewController.swift */; };
+		67A169B71EC7DCAE0008E69C /* ProjectSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67A169B61EC7DCAE0008E69C /* ProjectSearchViewController.swift */; };
 		67E030F31EC3F8BF005DA303 /* FTUViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67E030F21EC3F8BF005DA303 /* FTUViewController.swift */; };
 		67E030F51EC3F8F8005DA303 /* HDXApplication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67E030F41EC3F8F8005DA303 /* HDXApplication.swift */; };
 		67E030F71EC3F916005DA303 /* HDXClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67E030F61EC3F916005DA303 /* HDXClient.swift */; };
@@ -44,10 +44,10 @@
 		464F9B231EB7186B00C3DA70 /* FTUPhoneNumberViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FTUPhoneNumberViewController.swift; sourceTree = "<group>"; };
 		464F9B251EB7189C00C3DA70 /* FTUVerificationcodeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FTUVerificationcodeViewController.swift; sourceTree = "<group>"; };
 		464F9B271EB718B000C3DA70 /* FTUFirstNameViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FTUFirstNameViewController.swift; sourceTree = "<group>"; };
-		67398F921EB6AC490046B5A6 /* SearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		67398F941EB6AD7B0046B5A6 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		67398F961EB6E64F0046B5A6 /* EventCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventCell.swift; sourceTree = "<group>"; };
 		67398F981EB6EBD80046B5A6 /* HamburgerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HamburgerViewController.swift; sourceTree = "<group>"; };
+		67A169B61EC7DCAE0008E69C /* ProjectSearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProjectSearchViewController.swift; sourceTree = "<group>"; };
 		67E030F21EC3F8BF005DA303 /* FTUViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FTUViewController.swift; sourceTree = "<group>"; };
 		67E030F41EC3F8F8005DA303 /* HDXApplication.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HDXApplication.swift; sourceTree = "<group>"; };
 		67E030F61EC3F916005DA303 /* HDXClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HDXClient.swift; sourceTree = "<group>"; };
@@ -168,11 +168,11 @@
 				CF16C3E41EAEF85200AAECD7 /* Assets.xcassets */,
 				CF16C3E61EAEF85200AAECD7 /* LaunchScreen.storyboard */,
 				CF16C3E91EAEF85200AAECD7 /* Info.plist */,
-				67398F921EB6AC490046B5A6 /* SearchViewController.swift */,
 				67398F941EB6AD7B0046B5A6 /* HomeViewController.swift */,
 				67398F961EB6E64F0046B5A6 /* EventCell.swift */,
 				67398F981EB6EBD80046B5A6 /* HamburgerViewController.swift */,
 				67E030FC1EC6BF58005DA303 /* ProjectCell.swift */,
+				67A169B61EC7DCAE0008E69C /* ProjectSearchViewController.swift */,
 			);
 			path = Donaid;
 			sourceTree = "<group>";
@@ -316,7 +316,7 @@
 				67E030F51EC3F8F8005DA303 /* HDXApplication.swift in Sources */,
 				67398F991EB6EBD80046B5A6 /* HamburgerViewController.swift in Sources */,
 				67E030F91EC3F921005DA303 /* HDXProject.swift in Sources */,
-				67398F931EB6AC490046B5A6 /* SearchViewController.swift in Sources */,
+				67A169B71EC7DCAE0008E69C /* ProjectSearchViewController.swift in Sources */,
 				67398F971EB6E64F0046B5A6 /* EventCell.swift in Sources */,
 				CF16C3DE1EAEF85200AAECD7 /* AppDelegate.swift in Sources */,
 				CFAEEE341EB68AD700CA7AD2 /* FTUCardNumberViewController.swift in Sources */,

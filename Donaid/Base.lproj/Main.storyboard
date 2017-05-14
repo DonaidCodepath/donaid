@@ -901,67 +901,49 @@ Now your First Name, Please!</string>
             </objects>
             <point key="canvasLocation" x="1825" y="-716"/>
         </scene>
-        <!--Search View Controller-->
-        <scene sceneID="AuE-DJ-ezD">
+        <!--Project Search View Controller-->
+        <scene sceneID="okY-YE-bj7">
             <objects>
-                <viewController storyboardIdentifier="SearchViewController" id="m31-ON-7Bh" customClass="SearchViewController" customModule="Donaid" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BdS-qO-qhh" customClass="ProjectSearchViewController" customModule="Donaid" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="ccQ-UH-cLo"/>
-                        <viewControllerLayoutGuide type="bottom" id="3Pc-tn-P7n"/>
+                        <viewControllerLayoutGuide type="top" id="Rpf-af-fIi"/>
+                        <viewControllerLayoutGuide type="bottom" id="dGB-31-9ZI"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="yUz-Ce-iuk">
+                    <view key="view" contentMode="scaleToFill" id="4La-f3-B0o">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="128" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="awK-Or-gzW">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="122" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="uuE-GU-1lp">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ProjectCell" id="oee-XS-UuM" customClass="ProjectCell" customModule="Donaid" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="375" height="128"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ProjectCell" rowHeight="122" id="qLs-qO-ORW" customClass="ProjectCell" customModule="Donaid" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="122"/>
                                         <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="oee-XS-UuM" id="qzP-W5-jq5">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="127"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="qLs-qO-ORW" id="OMZ-lg-yKo">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="121"/>
                                             <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qc5-1a-vOA">
-                                                    <rect key="frame" x="8" y="14" width="96" height="98"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Syrian Refugee Search" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RwB-wO-fhl">
-                                                    <rect key="frame" x="112" y="14" width="174" height="21"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                            </subviews>
                                         </tableViewCellContentView>
-                                        <connections>
-                                            <outlet property="countryImage" destination="qc5-1a-vOA" id="x7O-LL-Slh"/>
-                                            <outlet property="projectImage" destination="qc5-1a-vOA" id="IWY-Wu-4mC"/>
-                                            <outlet property="textlabel" destination="RwB-wO-fhl" id="Uhx-xH-0yZ"/>
-                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="awK-Or-gzW" firstAttribute="top" secondItem="yUz-Ce-iuk" secondAttribute="top" id="9Z9-dK-PWj"/>
-                            <constraint firstAttribute="trailing" secondItem="awK-Or-gzW" secondAttribute="trailing" id="KZg-WU-Z4p"/>
-                            <constraint firstItem="3Pc-tn-P7n" firstAttribute="top" secondItem="awK-Or-gzW" secondAttribute="bottom" id="LA9-BL-04p"/>
-                            <constraint firstItem="awK-Or-gzW" firstAttribute="leading" secondItem="yUz-Ce-iuk" secondAttribute="leading" id="Zi2-uf-296"/>
+                            <constraint firstItem="uuE-GU-1lp" firstAttribute="leading" secondItem="4La-f3-B0o" secondAttribute="leading" id="E3n-qU-WDo"/>
+                            <constraint firstAttribute="trailing" secondItem="uuE-GU-1lp" secondAttribute="trailing" id="Taq-za-NhO"/>
+                            <constraint firstItem="dGB-31-9ZI" firstAttribute="top" secondItem="uuE-GU-1lp" secondAttribute="bottom" id="olw-Ex-dfz"/>
+                            <constraint firstItem="uuE-GU-1lp" firstAttribute="top" secondItem="4La-f3-B0o" secondAttribute="top" id="sHD-rx-WLc"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="C3D-HV-vKj"/>
+                    <navigationItem key="navigationItem" id="z9M-Q7-i6q"/>
                     <connections>
-                        <outlet property="tableView" destination="awK-Or-gzW" id="cOG-K2-EoM"/>
+                        <outlet property="tableView" destination="uuE-GU-1lp" id="ipq-xB-raX"/>
                     </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="xo3-xy-oEY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vcm-MG-YFl" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5285.6000000000004" y="453.82308845577217"/>
+            <point key="canvasLocation" x="5340" y="1322.7886056971515"/>
         </scene>
         <!--Hamburger View Controller-->
         <scene sceneID="Vk9-P7-FrB">
@@ -1053,22 +1035,22 @@ Now your First Name, Please!</string>
             <point key="canvasLocation" x="4401" y="-296"/>
         </scene>
         <!--Navigation Controller-->
-        <scene sceneID="s9c-7c-slh">
+        <scene sceneID="8Qy-e6-G5d">
             <objects>
-                <navigationController storyboardIdentifier="SearchNavigationController" automaticallyAdjustsScrollViewInsets="NO" id="ovR-iM-UGc" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="ProjectSearchNavigationController" automaticallyAdjustsScrollViewInsets="NO" id="mwI-sf-R60" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="sVs-Mn-iVM">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="9VK-3b-bTr">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="m31-ON-7Bh" kind="relationship" relationship="rootViewController" id="lGu-Cv-6Xd"/>
+                        <segue destination="BdS-qO-qhh" kind="relationship" relationship="rootViewController" id="c1b-K3-KOM"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="LIc-HM-xQl" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WB1-a5-yzM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4401" y="454"/>
+            <point key="canvasLocation" x="4400.8000000000002" y="1322.7886056971515"/>
         </scene>
     </scenes>
     <resources>

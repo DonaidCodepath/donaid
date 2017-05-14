@@ -38,7 +38,7 @@ class HamburgerViewController: UIViewController {
         
         //let hamburgerVC = storyBoard.instantiateViewController(withIdentifier: "HamburgerViewController") as! HamburgerViewController
         let trendingNavigationController = storyBoard.instantiateViewController(withIdentifier: "HomeNavigationController")
-        let searchNavigationController = storyBoard.instantiateViewController(withIdentifier: "SearchNavigationController")
+        let searchNavigationController = storyBoard.instantiateViewController(withIdentifier: "ProjectSearchNavigationController")
         
         firstViewController = trendingNavigationController
         secondViewController = searchNavigationController
