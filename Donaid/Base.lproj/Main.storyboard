@@ -736,6 +736,15 @@ Add you card number here.</string>
                                                 <constraint firstAttribute="trailingMargin" secondItem="4kM-mh-9bi" secondAttribute="trailing" constant="5" id="x7E-AZ-io5"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="agencyTitle" destination="7l1-Wc-jMN" id="WFC-DY-tVk"/>
+                                            <outlet property="beneficiariesCount" destination="ymw-55-oZx" id="gwa-vC-8Eh"/>
+                                            <outlet property="countryImage" destination="owz-p8-2so" id="Twq-OF-P7L"/>
+                                            <outlet property="countryLabel" destination="5Xa-Qz-MTS" id="wQa-cg-N66"/>
+                                            <outlet property="emergencyTypeLabel" destination="oHD-V5-Zgh" id="CQN-yI-gWy"/>
+                                            <outlet property="projectSummary" destination="4kM-mh-9bi" id="B5y-Q1-CZd"/>
+                                            <outlet property="regionLabel" destination="fcd-sc-KvO" id="6eI-yP-Z6E"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
