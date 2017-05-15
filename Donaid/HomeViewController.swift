@@ -35,22 +35,6 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
         print("made it fam")
     }
     
-    func initProjects() {
-        
-        for project in fullProjects {
-            
-            if let name = project.groupingName {
-                
-                if dictProjects[name] == nil {
-                    dictProjects[name] = []
-                }
-                
-                dictProjects[name]?.append(project)
-            }
-        }
-        
-    }
-    
     func fetchAllProjects() {
         HDXClient.sharedInstance?.getHDXProjectByYear(year: "2016", success: {[weak self] (projects: [HDXProject]) in
             
@@ -71,14 +55,19 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
         }) { (error: Error) in
             print("HDX Client error")
         }
-        
-        
     }
     
-    func filterProjectsBySectionIndex(index: Int) {
-       
-        
-        print("made it")
+    func initProjects() {
+        for project in fullProjects {
+            
+            if let name = project.groupingName {
+                if dictProjects[name] == nil {
+                    dictProjects[name] = []
+                }
+                
+                dictProjects[name]?.append(project)
+            }
+        }
     }
 
     override func didReceiveMemoryWarning() {
