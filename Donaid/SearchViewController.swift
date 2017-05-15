@@ -41,9 +41,6 @@ class SearchViewController: UIViewController, UISearchBarDelegate, UITableViewDa
         }
         
         
-//        count = projects.count ?? 0
-//        
-//        print("num projects is: \(count)")
         
         createSearchBar()
     }
