@@ -31,11 +31,20 @@ class HDXProject: NSObject {
         country = dictionary["countryName"] as? String
         continent = dictionary["continentName"] as? String
         region = dictionary["regionName"] as? String
-        groupingName = "NA" //todo figure out how to unwrap project grouping
         beneficiaries = (dictionary["beneficiariesTotal"] as? Int) ?? 0
         agencyName = dictionary["agencyName"] as? String
         agencyId = (dictionary["agencyID"] as? Int) ?? 0
+        
+        let groupDict = dictionary["projectgrouping"] as? NSDictionary
+        let groupingArray = groupDict?["projectgrouping"] as? [NSDictionary]
+        if (groupingArray != nil && (groupingArray?.count)! > 0) {
+            let projectGrouping = groupingArray?[0] as NSDictionary!
+            groupingName = projectGrouping?["groupingName"] as! String?
+        } else {
+            groupingName = ""
+        }
     }
+    
     
     class func issuesWithArray(array: [NSDictionary]) -> [HDXProject] {
         var apps = [HDXProject]()
