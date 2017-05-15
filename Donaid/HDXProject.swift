@@ -15,11 +15,11 @@ class HDXProject: NSObject {
     var isFunded: String?
     var emergencyType: String?
     var country: String?
+    var continent: String?
     var groupingName: String?
     var beneficiaries: Int = 0
     var agencyName: String?
     var agencyId: Int = 0
-    var projectStatus: String?
     
     
     init(dictionary: NSDictionary) {
@@ -28,11 +28,11 @@ class HDXProject: NSObject {
         isFunded = dictionary["projectStatus"] as? String
         emergencyType = dictionary["emergencyTypeName"] as? String
         country = dictionary["countryName"] as? String
+        continent = dictionary["continentName"] as? String
         groupingName = "NA" //todo figure out how to unwrap project grouping
         beneficiaries = (dictionary["beneficiariesTotal"] as? Int) ?? 0
         agencyName = dictionary["agencyName"] as? String
         agencyId = (dictionary["agencyID"] as? Int) ?? 0
-        projectStatus = dictionary["projectStatus"] as? String
     }
     
     class func issuesWithArray(array: [NSDictionary]) -> [HDXProject] {
