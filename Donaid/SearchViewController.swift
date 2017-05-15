@@ -96,21 +96,28 @@ class SearchViewController: UIViewController, UISearchBarDelegate, UITableViewDa
     
     // MARK: - Search Bar Functionality
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
-        self.filteredProjects = self.fullProjects.filter({ (project: HDXProject) -> Bool in
-            let country = project.country
-            let continent = project.continent
-            let agency = project.agencyName
-            let emergencyType = project.emergencyType
+        if (fullProjects != nil) {
+            self.filteredProjects = self.fullProjects.filter({ (project: HDXProject) -> Bool in
+                let country = project.country
+                let continent = project.continent
+                let agency = project.agencyName
+                let emergencyType = project.emergencyType
+                let grouping = project.groupingName
+                
+                return ( (emergencyType!.lowercased().range(of: searchText, options: .caseInsensitive) != nil) ||
+                    (agency!.lowercased().range(of: searchText, options: .caseInsensitive) != nil) ||
+                    (continent!.lowercased().range(of: searchText, options: .caseInsensitive) != nil) ||
+                    (country!.lowercased().range(of: searchText, options: .caseInsensitive) != nil) ||
+                    (grouping!.lowercased().range(of: searchText, options: .caseInsensitive) != nil))
+            })
             
-            return ( (emergencyType!.lowercased().range(of: searchText, options: .caseInsensitive) != nil) || (agency!.lowercased().range(of: searchText, options: .caseInsensitive) != nil) || (continent!.lowercased().range(of: searchText, options: .caseInsensitive) != nil) || (country!.lowercased().range(of: searchText, options: .caseInsensitive) != nil) )
-        })
-        
-        if (searchText != "") {
-            showSearchResults = true
-            self.tableView.reloadData()
-        } else {
-            showSearchResults = false
-            self.tableView.reloadData()
+            if (searchText != "") {
+                showSearchResults = true
+                self.tableView.reloadData()
+            } else {
+                showSearchResults = false
+                self.tableView.reloadData()
+            }
         }
     }
     
