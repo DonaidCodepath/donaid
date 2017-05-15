@@ -1,11 +1,11 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="1vJ-fT-fYm">
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1421" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="1vJ-fT-fYm">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -635,7 +635,7 @@ Add you card number here.</string>
                                         <rect key="frame" x="0.0" y="28" width="375" height="118"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="hJ6-Gd-wwg" id="mUy-ex-IV2">
-                                            <rect key="frame" x="0.0" y="0.0" width="342" height="117.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="342" height="117"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="8VE-sk-38U">
@@ -708,7 +708,7 @@ Add you card number here.</string>
                                         <rect key="frame" x="0.0" y="28" width="375" height="116"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="AXJ-BF-UK6" id="QU4-xQ-a8J">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="115.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="115"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lbH-sF-Jv7">
@@ -786,11 +786,10 @@ Add you card number here.</string>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="kWf-tO-UsR" id="SRJ-ds-ygQ">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="160"/>
-
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Gc0-FD-LVS">
-                                                    <rect key="frame" x="0.0" y="0.0" width="114" height="160"/>
+                                                    <rect key="frame" x="0.0" y="3" width="114" height="154.5"/>
                                                     <subviews>
                                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="syria" translatesAutoresizingMaskIntoConstraints="NO" id="U9L-jh-AOx">
                                                             <rect key="frame" x="10" y="12" width="93" height="92"/>
@@ -805,7 +804,7 @@ Add you card number here.</string>
                                                             <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Eastern Asia" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LKX-Kn-sjm">
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Eastern Asia" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LKX-Kn-sjm">
                                                             <rect key="frame" x="10" y="132" width="79" height="16"/>
                                                             <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="13"/>
                                                             <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -841,14 +840,14 @@ Add you card number here.</string>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Drought" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p8j-1Z-0SA">
-                                                    <rect key="frame" x="238" y="103" width="51" height="16"/>
+                                                    <rect key="frame" x="202" y="103" width="51" height="16"/>
                                                     <color key="backgroundColor" red="0.98431372549999996" green="0.0" blue="0.60392156860000001" alpha="1" colorSpace="calibratedRGB"/>
                                                     <fontDescription key="fontDescription" type="system" weight="medium" pointSize="13"/>
                                                     <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Emergency Type:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fnf-Wb-hTN">
-                                                    <rect key="frame" x="119" y="103" width="116" height="16"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Crisis Type:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fnf-Wb-hTN">
+                                                    <rect key="frame" x="119" y="103" width="80" height="16"/>
                                                     <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="13"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
@@ -871,7 +870,7 @@ Add you card number here.</string>
                                                 <constraint firstItem="Lm5-tF-6gs" firstAttribute="leading" secondItem="heo-UZ-INb" secondAttribute="trailing" constant="2" id="ByJ-GP-KBl"/>
                                                 <constraint firstAttribute="bottomMargin" relation="greaterThanOrEqual" secondItem="heo-UZ-INb" secondAttribute="bottom" constant="5" id="E2n-9d-z2u"/>
                                                 <constraint firstItem="5wv-9p-eqx" firstAttribute="leading" secondItem="Gc0-FD-LVS" secondAttribute="trailing" constant="5" id="Pbh-V1-D3c"/>
-                                                <constraint firstAttribute="bottom" secondItem="Gc0-FD-LVS" secondAttribute="bottom" id="Pdt-B7-D2i"/>
+                                                <constraint firstAttribute="bottom" secondItem="Gc0-FD-LVS" secondAttribute="bottom" constant="3" id="Pdt-B7-D2i"/>
                                                 <constraint firstItem="fnf-Wb-hTN" firstAttribute="top" secondItem="Rre-Id-hL6" secondAttribute="bottom" constant="5" id="QEi-2Y-JPa"/>
                                                 <constraint firstItem="5wv-9p-eqx" firstAttribute="top" secondItem="SRJ-ds-ygQ" secondAttribute="topMargin" constant="4" id="QdC-DS-c0e"/>
                                                 <constraint firstItem="Rre-Id-hL6" firstAttribute="top" secondItem="5wv-9p-eqx" secondAttribute="bottom" constant="2" id="S35-NE-gAb"/>
@@ -881,13 +880,22 @@ Add you card number here.</string>
                                                 <constraint firstItem="p8j-1Z-0SA" firstAttribute="top" secondItem="Rre-Id-hL6" secondAttribute="bottom" constant="5" id="YNM-GU-H8m"/>
                                                 <constraint firstItem="Rre-Id-hL6" firstAttribute="leading" secondItem="Gc0-FD-LVS" secondAttribute="trailing" constant="5" id="YWc-if-180"/>
                                                 <constraint firstAttribute="trailingMargin" secondItem="Rre-Id-hL6" secondAttribute="trailing" constant="5" id="ZBw-xH-3yt"/>
-                                                <constraint firstItem="Gc0-FD-LVS" firstAttribute="top" secondItem="SRJ-ds-ygQ" secondAttribute="top" id="dUh-Wu-KFN"/>
+                                                <constraint firstItem="Gc0-FD-LVS" firstAttribute="top" secondItem="SRJ-ds-ygQ" secondAttribute="top" constant="3" id="dUh-Wu-KFN"/>
                                                 <constraint firstItem="Gc0-FD-LVS" firstAttribute="leading" secondItem="SRJ-ds-ygQ" secondAttribute="leading" id="npq-Tp-ITF"/>
                                                 <constraint firstAttribute="trailingMargin" relation="greaterThanOrEqual" secondItem="p8j-1Z-0SA" secondAttribute="trailing" constant="8" id="tKI-uq-7rw"/>
                                                 <constraint firstItem="heo-UZ-INb" firstAttribute="top" secondItem="p8j-1Z-0SA" secondAttribute="bottom" constant="5" id="z3w-DK-p5t"/>
                                                 <constraint firstItem="fnf-Wb-hTN" firstAttribute="leading" secondItem="Gc0-FD-LVS" secondAttribute="trailing" constant="5" id="zzv-ux-Ka3"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="agencyTitle" destination="5wv-9p-eqx" id="6kZ-Xr-W2b"/>
+                                            <outlet property="beneficiariesLabel" destination="Lm5-tF-6gs" id="Ewj-SD-kWn"/>
+                                            <outlet property="countryImage" destination="U9L-jh-AOx" id="ZLD-nZ-2Eq"/>
+                                            <outlet property="countryLabel" destination="V9w-kz-yQ1" id="Tf6-sQ-iK7"/>
+                                            <outlet property="emergencyTypeLabel" destination="p8j-1Z-0SA" id="V4K-Ue-ZhJ"/>
+                                            <outlet property="projectSummary" destination="Rre-Id-hL6" id="fUq-bR-G85"/>
+                                            <outlet property="regionLabel" destination="LKX-Kn-sjm" id="hW1-vC-fBQ"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
@@ -1182,7 +1190,6 @@ Add you card number here.</string>
         </scene>
     </scenes>
     <resources>
-        <image name="card" width="223" height="142"/>
         <image name="syria" width="262" height="254"/>
     </resources>
     <inferredMetricsTieBreakers>

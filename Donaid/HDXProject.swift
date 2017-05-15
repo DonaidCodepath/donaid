@@ -16,6 +16,7 @@ class HDXProject: NSObject {
     var emergencyType: String?
     var country: String?
     var continent: String?
+    var region: String?
     var groupingName: String?
     var beneficiaries: Int = 0
     var agencyName: String?
@@ -29,6 +30,7 @@ class HDXProject: NSObject {
         emergencyType = dictionary["emergencyTypeName"] as? String
         country = dictionary["countryName"] as? String
         continent = dictionary["continentName"] as? String
+        region = dictionary["regionName"] as? String
         groupingName = "NA" //todo figure out how to unwrap project grouping
         beneficiaries = (dictionary["beneficiariesTotal"] as? Int) ?? 0
         agencyName = dictionary["agencyName"] as? String
