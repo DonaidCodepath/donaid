@@ -383,11 +383,11 @@ Add you card number here.</string>
                                     <segue destination="hCX-SZ-gpf" kind="presentation" id="ZB8-Eh-efw"/>
                                 </connections>
                             </button>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zI9-wW-6Fs">
-                                <rect key="frame" x="33.5" y="151.5" width="308" height="30"/>
+                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zI9-wW-6Fs">
+                                <rect key="frame" x="33.5" y="151.5" width="300" height="30"/>
                                 <subviews>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="1111" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="804-4v-OTx">
-                                        <rect key="frame" x="24" y="1" width="60" height="30"/>
+                                        <rect key="frame" x="15" y="1" width="60" height="30"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="tintColor" red="0.0" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <color key="textColor" red="0.0" green="0.65098039220000004" blue="0.64313725489999995" alpha="1" colorSpace="calibratedRGB"/>
@@ -395,7 +395,7 @@ Add you card number here.</string>
                                         <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                                     </textField>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="1111" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fhD-d8-mLv">
-                                        <rect key="frame" x="92" y="1" width="60" height="30"/>
+                                        <rect key="frame" x="87" y="1" width="60" height="30"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="tintColor" red="0.0" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <color key="textColor" red="0.0" green="0.65098039220000004" blue="0.64313725489999995" alpha="1" colorSpace="calibratedRGB"/>
@@ -403,7 +403,7 @@ Add you card number here.</string>
                                         <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                                     </textField>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="1111" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ov6-JQ-v5U">
-                                        <rect key="frame" x="160" y="0.0" width="60" height="30"/>
+                                        <rect key="frame" x="159" y="0.0" width="60" height="30"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="tintColor" red="0.0" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <color key="textColor" red="0.0" green="0.65098039220000004" blue="0.64313725489999995" alpha="1" colorSpace="calibratedRGB"/>
@@ -422,7 +422,62 @@ Add you card number here.</string>
                                 <color key="backgroundColor" red="0.0" green="0.65098039220000004" blue="0.64313725489999995" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="ShT-IF-6TI"/>
-                                    <constraint firstAttribute="width" constant="308" id="pfL-mH-3qz"/>
+                                    <constraint firstAttribute="width" constant="300" id="pfL-mH-3qz"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tY8-j7-CWd">
+                                <rect key="frame" x="37" y="201.5" width="300" height="60"/>
+                                <subviews>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="XXX" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="pA4-uj-5hU">
+                                        <rect key="frame" x="212" y="30" width="75" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="tintColor" red="0.0" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="textColor" red="0.0" green="0.65098039220000004" blue="0.64313725489999995" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" type="system" weight="thin" pointSize="16"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                    </textField>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" horizontalHuggingPriority="249" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="MM" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="uaj-Q6-kHt">
+                                        <rect key="frame" x="16" y="30" width="50" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="tintColor" red="0.0" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="textColor" red="0.0" green="0.65098039220000004" blue="0.64313725489999995" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" type="system" weight="thin" pointSize="16"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                    </textField>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="YY" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Kwl-bg-21V">
+                                        <rect key="frame" x="83" y="30" width="50" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="tintColor" red="0.0" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="textColor" red="0.0" green="0.65098039220000004" blue="0.64313725489999995" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" type="system" weight="thin" pointSize="16"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                    </textField>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="/" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jd1-5X-qDM">
+                                        <rect key="frame" x="71" y="34" width="6" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="0.0" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="highlightedColor" red="0.0" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Expiration Date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ufb-9f-wL0">
+                                        <rect key="frame" x="19" y="0.0" width="109" height="20"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" weight="thin" pointSize="16"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="CVV" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Huk-Rw-pkq">
+                                        <rect key="frame" x="233" y="0.0" width="32" height="16"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" weight="thin" pointSize="16"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.0" green="0.65098039220000004" blue="0.64313725489999995" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="MbW-H2-8Hz"/>
+                                    <constraint firstAttribute="height" constant="60" id="tqr-Gj-Zus"/>
                                 </constraints>
                             </view>
                         </subviews>
@@ -435,10 +490,12 @@ Add you card number here.</string>
                             <constraint firstItem="VhY-FR-tLW" firstAttribute="centerX" secondItem="g0K-pn-RgE" secondAttribute="centerX" id="OKW-bC-Xib"/>
                             <constraint firstItem="Hd4-bK-X36" firstAttribute="centerX" secondItem="g0K-pn-RgE" secondAttribute="centerX" id="W21-Y1-QPQ"/>
                             <constraint firstItem="7bS-5Y-ZsA" firstAttribute="leading" secondItem="g0K-pn-RgE" secondAttribute="leading" id="e7H-Da-gBx"/>
+                            <constraint firstItem="tY8-j7-CWd" firstAttribute="centerX" secondItem="g0K-pn-RgE" secondAttribute="centerX" id="eR6-oV-scb"/>
                             <constraint firstAttribute="trailing" secondItem="Hd4-bK-X36" secondAttribute="trailing" constant="10" id="gVj-Un-UAe"/>
                             <constraint firstItem="OD8-Sj-yOJ" firstAttribute="centerX" secondItem="g0K-pn-RgE" secondAttribute="centerX" id="iY6-v6-oez"/>
                             <constraint firstItem="Hd4-bK-X36" firstAttribute="top" secondItem="OD8-Sj-yOJ" secondAttribute="bottom" constant="10" id="mM2-Ok-q9B"/>
                             <constraint firstItem="zI9-wW-6Fs" firstAttribute="top" secondItem="Hd4-bK-X36" secondAttribute="bottom" constant="10" id="mlO-1O-26C"/>
+                            <constraint firstItem="tY8-j7-CWd" firstAttribute="top" secondItem="Hd4-bK-X36" secondAttribute="bottom" constant="60" id="pkg-mS-Ibf"/>
                             <constraint firstItem="7bS-5Y-ZsA" firstAttribute="top" secondItem="g0K-pn-RgE" secondAttribute="top" id="pvH-Nx-4pp"/>
                             <constraint firstItem="OPC-LB-E1e" firstAttribute="top" secondItem="VhY-FR-tLW" secondAttribute="bottom" constant="220" id="yfg-kl-iD2"/>
                         </constraints>
@@ -1095,13 +1152,12 @@ Add you card number here.</string>
         </scene>
     </scenes>
     <resources>
-        <image name="card" width="223" height="142"/>
         <image name="syria" width="262" height="254"/>
     </resources>
     <inferredMetricsTieBreakers>
+        <segue reference="Tvm-II-bFj"/>
         <segue reference="cDZ-f5-S8b"/>
         <segue reference="ZB8-Eh-efw"/>
-        <segue reference="agO-mk-Qvl"/>
-        <segue reference="Tvm-II-bFj"/>
+        <segue reference="FDm-7L-eRb"/>
     </inferredMetricsTieBreakers>
 </document>
