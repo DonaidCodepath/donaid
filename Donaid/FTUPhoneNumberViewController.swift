@@ -9,19 +9,16 @@
 import UIKit
 
 class FTUPhoneNumberViewController: UIViewController, numpadDelegate {
-
-    weak var numpad: numpad?
     
     @IBOutlet weak var numpadView: UIView!
     @IBOutlet weak var phoneNumberText: UITextField!
     @IBAction func onSendCode(_ sender: UIButton) {
-        var updatedUser = User.currentUser
-        updatedUser?.phoneNumber = phoneNumberText.text
-        User.currentUser = updatedUser
+//        var updatedUser = User.currentUser
+//        updatedUser?.phoneNumber = phoneNumberText.text
+//        User.currentUser = updatedUser
     }
     
     func buttonClicked(sender: numpad, num: String) {
-        print(num)
         
         var soFar : String = phoneNumberText.text!;
         if (num == "BACKSPACE") {

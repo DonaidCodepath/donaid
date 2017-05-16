@@ -19,12 +19,13 @@ class FTUCardNumberViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        First4TextField.becomeFirstResponder()
 
         let defaults = UserDefaults.standard
         
         let userName = defaults.object(forKey: "currentUserFirstName") as? String
         welcomeMessage.text = "Hello " + userName! + ","
-        // Do any additional setup after loading the view.
     }
 
     override func didReceiveMemoryWarning() {

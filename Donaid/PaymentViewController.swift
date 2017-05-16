@@ -8,16 +8,23 @@
 
 import UIKit
 
-class PaymentViewController: UIViewController {
+class PaymentViewController: UIViewController, numpadDelegate {
 
     
+    @IBOutlet weak var numpadView: UIView!
     @IBOutlet weak var amountLabel: UILabel!
+    
     var amount: String!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         amount = "0"
         amountLabel.text = amount
-        // Do any additional setup after loading the view.
+        
+        if let numView = Bundle.main.loadNibNamed("numpad", owner: self, options: nil)?.first as? numpad {
+            numView.delegate = self
+            numpadView.addSubview(numView)
+        }
     }
 
     @IBAction func onOneClick(_ sender: Any) {
@@ -28,46 +35,27 @@ class PaymentViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    @IBAction func onTwo(_ sender: Any) {
-        amount = amount + "2"
-        amountLabel.text = amount
+    
+    func buttonClicked(sender: numpad, num: String) {
+        
+        var soFar : String = amountLabel.text!;
+        if (num == "BACKSPACE") {
+            soFar.remove(at: soFar.index(before: soFar.endIndex))
+            amountLabel.text = soFar
+        } else {
+            if (soFar == "0") {
+                soFar = ""
+            }
+            amountLabel.text = soFar + num;
+            
+            if (soFar.characters.count > 5) {
+                amountLabel.font = amountLabel.font.withSize(50)
+            } else {
+                amountLabel.font = amountLabel.font.withSize(70)
+            }
+        }
     }
     
-    @IBAction func onThree(_ sender: Any) {
-        amount = amount + "3"
-        amountLabel.text = amount
-    }
-
-    @IBAction func onSix(_ sender: Any) {
-        amount = amount + "6"
-        amountLabel.text = amount
-    }
-    
-    @IBAction func onSeven(_ sender: Any) {
-        amount = amount + "7"
-        amountLabel.text = amount
-    }
-    
-    @IBAction func onEight(_ sender: Any) {
-        amount = amount + "8"
-        amountLabel.text = amount
-    }
-    
-    @IBAction func onNine(_ sender: Any) {
-        amount = amount + "9"
-        amountLabel.text = amount
-    }
-    
-    @IBAction func onFour(_ sender: Any) {
-        amount = amount + "4"
-        amountLabel.text = amount
-    }
-   
-    @IBAction func onZero(_ sender: Any) {
-        amount = amount + "0"
-        amountLabel.text = amount
-    }
-   
     /*
      @IBAction func onFive(_ sender: Any) {
      }
