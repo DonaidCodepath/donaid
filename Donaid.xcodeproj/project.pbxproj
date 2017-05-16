@@ -17,6 +17,8 @@
 		464F9B281EB718B000C3DA70 /* FTUFirstNameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 464F9B271EB718B000C3DA70 /* FTUFirstNameViewController.swift */; };
 		46A430311EC7B78F00049043 /* numpad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 46A430301EC7B78F00049043 /* numpad.xib */; };
 		46A430331EC7B8CF00049043 /* numpad.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46A430321EC7B8CF00049043 /* numpad.swift */; };
+		67111F921ECA9CB500D15CC9 /* GroupHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 67111F911ECA9CB500D15CC9 /* GroupHeaderView.xib */; };
+		67111F941ECA9D3200D15CC9 /* GroupHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67111F931ECA9D3200D15CC9 /* GroupHeaderView.swift */; };
 		67398F931EB6AC490046B5A6 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67398F921EB6AC490046B5A6 /* SearchViewController.swift */; };
 		67398F951EB6AD7B0046B5A6 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67398F941EB6AD7B0046B5A6 /* HomeViewController.swift */; };
 		67398F971EB6E64F0046B5A6 /* EventCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67398F961EB6E64F0046B5A6 /* EventCell.swift */; };
@@ -49,6 +51,8 @@
 		464F9B271EB718B000C3DA70 /* FTUFirstNameViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FTUFirstNameViewController.swift; sourceTree = "<group>"; };
 		46A430301EC7B78F00049043 /* numpad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = numpad.xib; sourceTree = "<group>"; };
 		46A430321EC7B8CF00049043 /* numpad.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = numpad.swift; sourceTree = "<group>"; };
+		67111F911ECA9CB500D15CC9 /* GroupHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GroupHeaderView.xib; sourceTree = "<group>"; };
+		67111F931ECA9D3200D15CC9 /* GroupHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GroupHeaderView.swift; sourceTree = "<group>"; };
 		67398F921EB6AC490046B5A6 /* SearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		67398F941EB6AD7B0046B5A6 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		67398F961EB6E64F0046B5A6 /* EventCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventCell.swift; sourceTree = "<group>"; };
@@ -179,9 +183,11 @@
 				CF16C3E91EAEF85200AAECD7 /* Info.plist */,
 				67398F921EB6AC490046B5A6 /* SearchViewController.swift */,
 				67398F941EB6AD7B0046B5A6 /* HomeViewController.swift */,
+				67111F911ECA9CB500D15CC9 /* GroupHeaderView.xib */,
 				67398F961EB6E64F0046B5A6 /* EventCell.swift */,
 				67398F981EB6EBD80046B5A6 /* HamburgerViewController.swift */,
 				67E4A5391EC8B98B001282DA /* ProjectCell.swift */,
+				67111F931ECA9D3200D15CC9 /* GroupHeaderView.swift */,
 			);
 			path = Donaid;
 			sourceTree = "<group>";
@@ -249,6 +255,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				67111F921ECA9CB500D15CC9 /* GroupHeaderView.xib in Resources */,
 				46A430311EC7B78F00049043 /* numpad.xib in Resources */,
 				CF16C3E81EAEF85200AAECD7 /* LaunchScreen.storyboard in Resources */,
 				CF16C3E51EAEF85200AAECD7 /* Assets.xcassets in Resources */,
@@ -320,6 +327,7 @@
 				464F9B261EB7189C00C3DA70 /* FTUVerificationcodeViewController.swift in Sources */,
 				464F9B281EB718B000C3DA70 /* FTUFirstNameViewController.swift in Sources */,
 				464F9B161EB70E8900C3DA70 /* Issue.swift in Sources */,
+				67111F941ECA9D3200D15CC9 /* GroupHeaderView.swift in Sources */,
 				CFB0A1731EC428BA0048A75A /* PaymentViewController.swift in Sources */,
 				464F9B181EB70EAD00C3DA70 /* Organization.swift in Sources */,
 				464F9B1A1EB70F0700C3DA70 /* PaymentInfo.swift in Sources */,
