@@ -23,6 +23,9 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        
+        self.navigationItem.titleView = UIImageView(image: #imageLiteral(resourceName: "smallDonaidLogo2"))
 
         // Do any additional setup after loading the view.
         tableView.delegate = self
