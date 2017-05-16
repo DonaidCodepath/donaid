@@ -97,8 +97,12 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         if projectsByGrouping.count > 0 {
-            let groupingProjects = getProjectsBySection(section: section)
-            return groupingProjects.count
+            if !sectionsExpanded[section]! {
+                return 0
+            } else {
+                let groupingProjects = getProjectsBySection(section: section)
+                return groupingProjects.count
+            }
         } else {
             return 0
         }

@@ -736,19 +736,19 @@ Feel free to share this tag with your friends and family.</string>
                         <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="179" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="xpF-fh-kT3">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="205" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="xpF-fh-kT3">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="EventCell" rowHeight="179" id="WOc-WC-2n6" customClass="EventCell" customModule="Donaid" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="375" height="179"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="EventCell" rowHeight="205" id="WOc-WC-2n6" customClass="EventCell" customModule="Donaid" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="205"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="WOc-WC-2n6" id="dub-TU-jJJ">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="178"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="204"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rez-2f-NFq">
-                                                    <rect key="frame" x="0.0" y="3" width="114" height="172"/>
+                                                    <rect key="frame" x="0.0" y="3" width="114" height="198.5"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Syria," textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Xa-Qz-MTS">
                                                             <rect key="frame" x="10" y="112" width="48" height="20"/>
@@ -799,50 +799,52 @@ Feel free to share this tag with your friends and family.</string>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Drought" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oHD-V5-Zgh">
-                                                    <rect key="frame" x="166" y="103" width="51" height="16"/>
-                                                    <color key="backgroundColor" red="0.98431372549999996" green="0.0" blue="0.60392156860000001" alpha="1" colorSpace="calibratedRGB"/>
-                                                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="13"/>
+                                                    <rect key="frame" x="129" y="124" width="62.5" height="18"/>
+                                                    <color key="backgroundColor" red="0.90980392160000001" green="0.12941176469999999" blue="0.38823529410000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <fontDescription key="fontDescription" type="system" weight="black" pointSize="15"/>
                                                     <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Crisis:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="01Q-bC-vmb">
-                                                    <rect key="frame" x="119" y="103" width="44" height="16"/>
-                                                    <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="13"/>
+                                                    <rect key="frame" x="119" y="103" width="42" height="16"/>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="13"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Beneficiaries:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ycq-gY-sJS">
-                                                    <rect key="frame" x="119" y="124" width="93" height="16"/>
-                                                    <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="13"/>
+                                                    <rect key="frame" x="119" y="147" width="89" height="16"/>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="13"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="7353" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ymw-55-oZx">
-                                                    <rect key="frame" x="214" y="124" width="33" height="16"/>
-                                                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="13"/>
-                                                    <color key="textColor" red="0.0" green="0.75402895940000003" blue="0.095585629140000003" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <rect key="frame" x="129" y="168" width="40" height="18"/>
+                                                    <color key="backgroundColor" red="0.90980392160000001" green="0.12941176469999999" blue="0.38823529410000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="15"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
                                             <constraints>
                                                 <constraint firstItem="4kM-mh-9bi" firstAttribute="leading" secondItem="rez-2f-NFq" secondAttribute="trailing" constant="5" id="00P-De-bZ5"/>
                                                 <constraint firstAttribute="trailingMargin" secondItem="7l1-Wc-jMN" secondAttribute="trailing" constant="5" id="2IZ-py-Wib"/>
-                                                <constraint firstItem="ycq-gY-sJS" firstAttribute="leading" secondItem="rez-2f-NFq" secondAttribute="trailing" constant="5" id="5ar-xH-UFx"/>
                                                 <constraint firstItem="01Q-bC-vmb" firstAttribute="top" secondItem="4kM-mh-9bi" secondAttribute="bottom" constant="5" id="7hm-jS-pWY"/>
+                                                <constraint firstItem="ymw-55-oZx" firstAttribute="top" secondItem="ycq-gY-sJS" secondAttribute="bottom" constant="5" id="A5S-9i-eDy"/>
                                                 <constraint firstAttribute="bottom" secondItem="rez-2f-NFq" secondAttribute="bottom" constant="3" id="AgW-aw-j8H"/>
-                                                <constraint firstItem="ymw-55-oZx" firstAttribute="leading" secondItem="ycq-gY-sJS" secondAttribute="trailing" constant="2" id="CaI-KY-rwf"/>
-                                                <constraint firstItem="ymw-55-oZx" firstAttribute="top" secondItem="oHD-V5-Zgh" secondAttribute="bottom" constant="5" id="RBS-8i-vv7"/>
-                                                <constraint firstAttribute="bottomMargin" relation="greaterThanOrEqual" secondItem="ycq-gY-sJS" secondAttribute="bottom" constant="5" id="V1f-kU-8Xb"/>
                                                 <constraint firstItem="7l1-Wc-jMN" firstAttribute="leading" secondItem="rez-2f-NFq" secondAttribute="trailing" constant="5" id="VJ3-Rd-i75"/>
-                                                <constraint firstItem="oHD-V5-Zgh" firstAttribute="top" secondItem="4kM-mh-9bi" secondAttribute="bottom" constant="5" id="Vz5-RU-SJM"/>
                                                 <constraint firstItem="rez-2f-NFq" firstAttribute="leading" secondItem="dub-TU-jJJ" secondAttribute="leading" id="cGF-Xm-ytx"/>
                                                 <constraint firstItem="01Q-bC-vmb" firstAttribute="leading" secondItem="rez-2f-NFq" secondAttribute="trailing" constant="5" id="eDj-r6-2lL"/>
+                                                <constraint firstItem="oHD-V5-Zgh" firstAttribute="leading" secondItem="rez-2f-NFq" secondAttribute="trailing" constant="15" id="fPA-mv-TtG"/>
+                                                <constraint firstAttribute="trailingMargin" relation="greaterThanOrEqual" secondItem="oHD-V5-Zgh" secondAttribute="trailing" constant="5" id="ga5-9g-Hqy"/>
+                                                <constraint firstAttribute="bottomMargin" relation="greaterThanOrEqual" secondItem="ymw-55-oZx" secondAttribute="bottom" constant="4" id="h3U-N7-Yxl"/>
                                                 <constraint firstItem="7l1-Wc-jMN" firstAttribute="top" secondItem="dub-TU-jJJ" secondAttribute="topMargin" constant="4" id="imF-bx-nd1"/>
                                                 <constraint firstItem="4kM-mh-9bi" firstAttribute="top" secondItem="7l1-Wc-jMN" secondAttribute="bottom" constant="2" id="ksC-Q2-D0J"/>
+                                                <constraint firstItem="ycq-gY-sJS" firstAttribute="leading" secondItem="rez-2f-NFq" secondAttribute="trailing" constant="5" id="p62-4j-ETl"/>
                                                 <constraint firstItem="rez-2f-NFq" firstAttribute="top" secondItem="dub-TU-jJJ" secondAttribute="top" constant="3" id="sZr-z7-zyO"/>
-                                                <constraint firstItem="oHD-V5-Zgh" firstAttribute="leading" secondItem="01Q-bC-vmb" secondAttribute="trailing" constant="3" id="skB-tT-nCY"/>
-                                                <constraint firstItem="ycq-gY-sJS" firstAttribute="top" secondItem="oHD-V5-Zgh" secondAttribute="bottom" constant="5" id="uk5-Ey-5pt"/>
+                                                <constraint firstItem="ymw-55-oZx" firstAttribute="leading" secondItem="rez-2f-NFq" secondAttribute="trailing" constant="15" id="szN-oC-S0r"/>
+                                                <constraint firstItem="oHD-V5-Zgh" firstAttribute="top" secondItem="01Q-bC-vmb" secondAttribute="bottom" constant="5" id="uEa-Tc-0CM"/>
                                                 <constraint firstAttribute="trailingMargin" secondItem="4kM-mh-9bi" secondAttribute="trailing" constant="5" id="x7E-AZ-io5"/>
+                                                <constraint firstItem="ycq-gY-sJS" firstAttribute="top" secondItem="oHD-V5-Zgh" secondAttribute="bottom" constant="5" id="zBl-rM-l56"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
@@ -987,7 +989,7 @@ Feel free to share this tag with your friends and family.</string>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Drought" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p8j-1Z-0SA">
                                                     <rect key="frame" x="166" y="103" width="51" height="16"/>
-                                                    <color key="backgroundColor" red="0.98431372549999996" green="0.0" blue="0.60392156860000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <color key="backgroundColor" red="0.90980392160000001" green="0.12941176469999999" blue="0.38823529410000002" alpha="1" colorSpace="calibratedRGB"/>
                                                     <fontDescription key="fontDescription" type="system" weight="medium" pointSize="13"/>
                                                     <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                     <nil key="highlightedColor"/>
@@ -1223,7 +1225,7 @@ Feel free to share this tag with your friends and family.</string>
                 <navigationController storyboardIdentifier="HomeNavigationController" automaticallyAdjustsScrollViewInsets="NO" id="nVO-ci-6Xl" sceneMemberID="viewController">
                     <toolbarItems/>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" translucent="NO" backIndicatorImage="donaidLogo" id="AR5-zv-AbO">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" backIndicatorImage="donaidLogo" id="AR5-zv-AbO">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="barTintColor" red="0.63137254901960782" green="0.0" blue="0.22745098039215686" alpha="1" colorSpace="calibratedRGB"/>
@@ -1242,9 +1244,10 @@ Feel free to share this tag with your friends and family.</string>
             <objects>
                 <navigationController storyboardIdentifier="SearchNavigationController" automaticallyAdjustsScrollViewInsets="NO" id="ovR-iM-UGc" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="sVs-Mn-iVM">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="sVs-Mn-iVM">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.63137254899999995" green="0.0" blue="0.2274509804" alpha="1" colorSpace="calibratedRGB"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
