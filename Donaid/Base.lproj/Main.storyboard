@@ -1196,7 +1196,7 @@ Feel free to share this tag with your friends and family.</string>
                                     <constraint firstItem="Oc2-RJ-0Jk" firstAttribute="top" secondItem="mby-PC-yEK" secondAttribute="top" constant="7" id="S8T-2p-XtG"/>
                                     <constraint firstAttribute="bottom" secondItem="PsM-ie-TEk" secondAttribute="bottom" id="W4g-9l-86w"/>
                                     <constraint firstItem="sO1-xa-7CO" firstAttribute="top" secondItem="mby-PC-yEK" secondAttribute="top" constant="7" id="mGG-v6-YTO"/>
-                                    <constraint firstItem="PsM-ie-TEk" firstAttribute="leading" secondItem="mby-PC-yEK" secondAttribute="leading" id="s8O-Dr-YzA"/>
+                                    <constraint firstItem="PsM-ie-TEk" firstAttribute="leading" secondItem="mby-PC-yEK" secondAttribute="leading" identifier="highlightBarHorizPos" id="s8O-Dr-YzA"/>
                                 </constraints>
                             </view>
                         </subviews>
@@ -1212,6 +1212,8 @@ Feel free to share this tag with your friends and family.</string>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="highlightBarWidth" destination="JAN-co-8Tk" id="yEL-c7-xg7"/>
+                        <outlet property="highlightBarXPos" destination="s8O-Dr-YzA" id="4Ia-DE-Stj"/>
                         <outlet property="newContentView" destination="15a-vA-Cha" id="xOa-7H-gfB"/>
                     </connections>
                 </viewController>
@@ -1244,7 +1246,7 @@ Feel free to share this tag with your friends and family.</string>
             <objects>
                 <navigationController storyboardIdentifier="SearchNavigationController" automaticallyAdjustsScrollViewInsets="NO" id="ovR-iM-UGc" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="sVs-Mn-iVM">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="sVs-Mn-iVM">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="barTintColor" red="0.63137254899999995" green="0.0" blue="0.2274509804" alpha="1" colorSpace="calibratedRGB"/>
