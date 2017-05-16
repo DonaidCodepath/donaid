@@ -28,7 +28,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         //let loggedOutUserController = storyBoard.instantiateViewController(withIdentifier: "LoginViewCotroller")
         
-        let startFTU = false//User.currentUser?.isRegistered
+        var startFTU = true
+        
+        let defaults = UserDefaults.standard
+        //defaults.removeObject(forKey: "currentUserRegistered") //uncomment this if you wan to launch FTU flow again
+        
+        let isUserRegistered = defaults.object(forKey: "currentUserRegistered") as? String
+        if (isUserRegistered == "true") {
+            startFTU = false
+        }
+        
         
         if (startFTU == true){
             
@@ -37,7 +46,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             
             window?.rootViewController = viewController
         } else {
-            print("Already a user")
             let userDict: NSDictionary = [String : String]() as NSDictionary
             let newUser: User = User(dictionary: userDict)
             User.currentUser = newUser

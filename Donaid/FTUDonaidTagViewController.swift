@@ -10,9 +10,11 @@ import UIKit
 
 class FTUDonaidTagViewController: UIViewController {
 
+    @IBOutlet weak var donaidTag: UITextField!
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        donaidTag.becomeFirstResponder()
         // Do any additional setup after loading the view.
     }
 
@@ -21,6 +23,14 @@ class FTUDonaidTagViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    @IBAction func addTag(_ sender: UIButton) {
+        let userName = donaidTag.text
+        let defaults = UserDefaults.standard
+        defaults.removeObject(forKey: "currentUserDonaidTag")
+        defaults.set(userName, forKey: "currentUserDonaidTag")
+        
+        defaults.set("true", forKey: "currentUserRegistered")
+    }
 
     /*
     // MARK: - Navigation
