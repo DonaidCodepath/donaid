@@ -11,9 +11,14 @@ import UIKit
 class HamburgerViewController: UIViewController {
     
     @IBOutlet weak var newContentView: UIView!
+    @IBOutlet weak var highlightBarWidth: NSLayoutConstraint!
+    @IBOutlet weak var highlightBarXPos: NSLayoutConstraint!
     
     var firstViewController: UIViewController?
     var secondViewController: UIViewController?
+    
+    var screenWidth: CGFloat?
+    var trendingSelected = true
     
     var contentViewController: UIViewController! {
         didSet(oldContentViewController)  {
@@ -33,6 +38,10 @@ class HamburgerViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        screenWidth = view.bounds.width
+        highlightBarWidth.constant = (screenWidth! / 2)
+        
 
         // Do any additional setup after loading the view.
         let storyBoard = UIStoryboard.init(name: "Main", bundle: nil)
@@ -45,13 +54,30 @@ class HamburgerViewController: UIViewController {
     
     @IBAction func onTrendingTapped(_ sender: Any) {
         print("Trend tapped")
+        if !trendingSelected {
+            UIView.animate(withDuration: 0.1, animations: {
+                self.highlightBarXPos.constant = 0
+                self.view.layoutIfNeeded()
+            })
+        }
+        
         contentViewController = firstViewController
+        trendingSelected = true
     }
     
     
     @IBAction func onSearchTapped(_ sender: Any) {
         print("Search tapped")
+        
+        if trendingSelected {
+            UIView.animate(withDuration: 0.1, animations: {
+                self.highlightBarXPos.constant += (self.screenWidth! / 2)
+                self.view.layoutIfNeeded()
+            })
+        }
+        
         contentViewController = secondViewController
+        trendingSelected = false
     }
     
 
