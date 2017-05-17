@@ -19,6 +19,7 @@
 		46A430331EC7B8CF00049043 /* numpad.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46A430321EC7B8CF00049043 /* numpad.swift */; };
 		67111F921ECA9CB500D15CC9 /* GroupHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 67111F911ECA9CB500D15CC9 /* GroupHeaderView.xib */; };
 		67111F941ECA9D3200D15CC9 /* GroupHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67111F931ECA9D3200D15CC9 /* GroupHeaderView.swift */; };
+		67111F961ECBDE2E00D15CC9 /* NotificationExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67111F951ECBDE2E00D15CC9 /* NotificationExtension.swift */; };
 		67398F931EB6AC490046B5A6 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67398F921EB6AC490046B5A6 /* SearchViewController.swift */; };
 		67398F951EB6AD7B0046B5A6 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67398F941EB6AD7B0046B5A6 /* HomeViewController.swift */; };
 		67398F971EB6E64F0046B5A6 /* EventCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67398F961EB6E64F0046B5A6 /* EventCell.swift */; };
@@ -54,6 +55,7 @@
 		46A430321EC7B8CF00049043 /* numpad.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = numpad.swift; sourceTree = "<group>"; };
 		67111F911ECA9CB500D15CC9 /* GroupHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GroupHeaderView.xib; sourceTree = "<group>"; };
 		67111F931ECA9D3200D15CC9 /* GroupHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GroupHeaderView.swift; sourceTree = "<group>"; };
+		67111F951ECBDE2E00D15CC9 /* NotificationExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationExtension.swift; sourceTree = "<group>"; };
 		67398F921EB6AC490046B5A6 /* SearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		67398F941EB6AD7B0046B5A6 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		67398F961EB6E64F0046B5A6 /* EventCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventCell.swift; sourceTree = "<group>"; };
@@ -191,6 +193,7 @@
 				67398F981EB6EBD80046B5A6 /* HamburgerViewController.swift */,
 				67E4A5391EC8B98B001282DA /* ProjectCell.swift */,
 				67111F931ECA9D3200D15CC9 /* GroupHeaderView.swift */,
+				67111F951ECBDE2E00D15CC9 /* NotificationExtension.swift */,
 			);
 			path = Donaid;
 			sourceTree = "<group>";
@@ -326,6 +329,7 @@
 				67E4A53A1EC8B98B001282DA /* ProjectCell.swift in Sources */,
 				67E030F31EC3F8BF005DA303 /* FTUViewController.swift in Sources */,
 				464F9B1E1EB7119F00C3DA70 /* DonaidParse.swift in Sources */,
+				67111F961ECBDE2E00D15CC9 /* NotificationExtension.swift in Sources */,
 				CFAEEE361EB68B0100CA7AD2 /* FTUCardDetailsViewController.swift in Sources */,
 				464F9B261EB7189C00C3DA70 /* FTUVerificationcodeViewController.swift in Sources */,
 				464F9B281EB718B000C3DA70 /* FTUFirstNameViewController.swift in Sources */,
