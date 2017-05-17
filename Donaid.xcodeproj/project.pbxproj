@@ -38,6 +38,7 @@
 		CFAEEE361EB68B0100CA7AD2 /* FTUCardDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFAEEE351EB68B0100CA7AD2 /* FTUCardDetailsViewController.swift */; };
 		CFAEEE381EB68B2A00CA7AD2 /* FTUDonaidTagViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFAEEE371EB68B2A00CA7AD2 /* FTUDonaidTagViewController.swift */; };
 		CFB0A1731EC428BA0048A75A /* PaymentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFB0A1721EC428BA0048A75A /* PaymentViewController.swift */; };
+		CFF509D81ECBE1D900FFB36C /* SuccessViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFF509D71ECBE1D900FFB36C /* SuccessViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -75,6 +76,7 @@
 		CFAEEE351EB68B0100CA7AD2 /* FTUCardDetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FTUCardDetailsViewController.swift; sourceTree = "<group>"; };
 		CFAEEE371EB68B2A00CA7AD2 /* FTUDonaidTagViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FTUDonaidTagViewController.swift; sourceTree = "<group>"; };
 		CFB0A1721EC428BA0048A75A /* PaymentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaymentViewController.swift; sourceTree = "<group>"; };
+		CFF509D71ECBE1D900FFB36C /* SuccessViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SuccessViewController.swift; sourceTree = "<group>"; };
 		EC408D8CD0D18793C745B2A3 /* Pods-Donaid.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Donaid.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Donaid/Pods-Donaid.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -123,6 +125,7 @@
 				464F9B271EB718B000C3DA70 /* FTUFirstNameViewController.swift */,
 				67E030F21EC3F8BF005DA303 /* FTUViewController.swift */,
 				CFB0A1721EC428BA0048A75A /* PaymentViewController.swift */,
+				CFF509D71ECBE1D900FFB36C /* SuccessViewController.swift */,
 			);
 			name = "View Controllers";
 			sourceTree = "<group>";
@@ -340,6 +343,7 @@
 				CFAEEE381EB68B2A00CA7AD2 /* FTUDonaidTagViewController.swift in Sources */,
 				67E030F51EC3F8F8005DA303 /* HDXApplication.swift in Sources */,
 				67398F991EB6EBD80046B5A6 /* HamburgerViewController.swift in Sources */,
+				CFF509D81ECBE1D900FFB36C /* SuccessViewController.swift in Sources */,
 				67E030F91EC3F921005DA303 /* HDXProject.swift in Sources */,
 				67398F931EB6AC490046B5A6 /* SearchViewController.swift in Sources */,
 				67398F971EB6E64F0046B5A6 /* EventCell.swift in Sources */,
