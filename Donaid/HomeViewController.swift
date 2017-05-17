@@ -189,6 +189,15 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
     }
     
     
+    @IBAction func onLogoutTapped(_ sender: Any) {
+        let defaults = UserDefaults.standard
+        defaults.removeObject(forKey: "currentUserRegistered")
+        
+        NotificationCenter.default.post(name: .userDidLogoutNotificationName, object: nil)
+        //let storyBoard = UIStoryboard.init(name: "Main", bundle: nil)
+        //let loginController = storyBoard.instantiateViewController(withIdentifier: "LoginViewController")
+        
+    }
 
     /*
     // MARK: - Navigation

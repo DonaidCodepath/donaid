@@ -20,22 +20,45 @@
             <rect key="frame" x="0.0" y="0.0" width="406" height="60"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dBw-rO-bkc">
+                    <rect key="frame" x="0.0" y="0.0" width="406" height="55"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Next" translatesAutoresizingMaskIntoConstraints="NO" id="B84-kk-SPf">
+                            <rect key="frame" x="344" y="8" width="42" height="40"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="fkt-SI-8wZ"/>
+                                <constraint firstAttribute="width" constant="42" id="odb-dY-pNs"/>
+                            </constraints>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" red="0.89411764705882357" green="0.0" blue="0.30980392156862746" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstItem="B84-kk-SPf" firstAttribute="centerY" secondItem="dBw-rO-bkc" secondAttribute="centerY" id="VZ6-mh-5Ym"/>
+                        <constraint firstAttribute="trailing" secondItem="B84-kk-SPf" secondAttribute="trailing" constant="20" id="cAm-dq-emD"/>
+                    </constraints>
+                </view>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Syria Crisis" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aoT-5H-NA8">
-                    <rect key="frame" x="20" y="20" width="86" height="21"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                    <nil key="textColor"/>
+                    <rect key="frame" x="20" y="12" width="135" height="36"/>
+                    <fontDescription key="fontDescription" type="system" weight="thin" pointSize="30"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     <nil key="highlightedColor"/>
                 </label>
             </subviews>
-            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
             <constraints>
-                <constraint firstItem="aoT-5H-NA8" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="20" id="UlJ-GZ-bbo"/>
+                <constraint firstItem="aoT-5H-NA8" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="YcA-PB-2IM"/>
                 <constraint firstItem="aoT-5H-NA8" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="20" id="ZOi-Rm-afj"/>
-                <constraint firstAttribute="bottom" secondItem="aoT-5H-NA8" secondAttribute="bottom" constant="19" id="b21-Xa-OBY"/>
+                <constraint firstItem="dBw-rO-bkc" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="bAa-7v-rsd"/>
+                <constraint firstAttribute="bottom" secondItem="dBw-rO-bkc" secondAttribute="bottom" constant="5" id="urX-Dz-ur3"/>
+                <constraint firstAttribute="trailing" secondItem="dBw-rO-bkc" secondAttribute="trailing" id="wMW-Ix-8PA"/>
+                <constraint firstItem="dBw-rO-bkc" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="xLv-dy-aI4"/>
             </constraints>
             <nil key="simulatedStatusBarMetrics"/>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <point key="canvasLocation" x="92" y="-324"/>
         </view>
     </objects>
+    <resources>
+        <image name="Next" width="276" height="283"/>
+    </resources>
 </document>
