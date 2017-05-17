@@ -13,10 +13,18 @@ class GroupHeaderView: UIView {
     
     @IBOutlet var contentView: UIView!
     @IBOutlet weak var groupLabel: UILabel!
+    @IBOutlet weak var arrowImage: UIImageView!
+    
+    var didSetArrowImage = false
     
     var caption: String? {
         get { return groupLabel?.text }
         set { groupLabel.text = newValue }
+    }
+    
+    var arrow: UIImageView? {
+        get { return arrowImage }
+        set { arrowImage = newValue }
     }
     
     required init(coder aDecoder: NSCoder) {
@@ -37,7 +45,25 @@ class GroupHeaderView: UIView {
         addSubview(contentView)
         
         // custom initialization logic
+        if !didSetArrowImage {
+            print("Hit the init of header")
+            arrowImage.transform = arrowImage.transform.rotated(by: CGFloat(M_PI_2))
+        }
         
+        
+    }
+    
+    func rotateArrow() {
+        //UIView.animate(withDuration: 0.1, animations: {
+        //    self.arrowImage.transform = self.arrowImage.transform.rotated(by: CGFloat(M_PI_2))
+        //})
+        UIView.animate(withDuration: 0.1, delay: 0, usingSpringWithDamping: 1, initialSpringVelocity: 1, options: .curveEaseIn, animations: {
+            self.arrowImage.transform = self.arrowImage.transform.rotated(by: CGFloat(M_PI_2))
+        }) { (bool: Bool) in
+            print(bool)
+            
+        }
+        self.arrowImage.transform = self.arrowImage.transform.rotated(by: CGFloat(M_PI_2))
     }
 
     /*

@@ -139,16 +139,11 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
     
     func test(sender: UITapGestureRecognizer){
         //using sender, we can get the point in respect to the table view
-        let view = sender.view
+        let view = sender.view as? GroupHeaderView
         let section = view?.tag as Int!
         
-        let tapLocation = sender.location(in: self.tableView)
+        view?.rotateArrow()
         
-        //using the tapLocation, we retrieve the corresponding indexPath
-        let indexPath = self.tableView.indexPathForRow(at: tapLocation)
-        
-        //finally, we print out the value
-        print(view?.tag)
         
         if sectionsExpanded[section!]! {
             sectionsExpanded[section!] = false

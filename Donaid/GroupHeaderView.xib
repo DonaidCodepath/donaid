@@ -11,6 +11,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="GroupHeaderView" customModule="Donaid" customModuleProvider="target">
             <connections>
+                <outlet property="arrowImage" destination="B84-kk-SPf" id="tsL-Je-re3"/>
                 <outlet property="contentView" destination="iN0-l3-epB" id="0hV-VE-iMt"/>
                 <outlet property="groupLabel" destination="aoT-5H-NA8" id="TsX-nd-mV9"/>
             </connections>
