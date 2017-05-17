@@ -11,13 +11,23 @@ import UIKit
 class FTUFirstNameViewController: UIViewController, UITextFieldDelegate {
 
     @IBOutlet weak var firstName: UITextField!
+    @IBOutlet weak var nextButton: UIButton!
     
+    @IBOutlet weak var nextButtonBottomSpace: NSLayoutConstraint!
     override func viewDidLoad() {
         super.viewDidLoad()
         self.firstName.delegate = self
         
         firstName.becomeFirstResponder()
-        // Do any additional setup after loading the view.
+        
+        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShow), name: .UIKeyboardWillShow, object: nil)
+    }
+    
+    func keyboardWillShow(notification: NSNotification) {
+        if let keyboardSize = (notification.userInfo?[UIKeyboardFrameBeginUserInfoKey] as? NSValue)?.cgRectValue {
+            let keyboardHeight = keyboardSize.height
+            nextButtonBottomSpace.constant = keyboardHeight + 5
+        }
     }
     
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
