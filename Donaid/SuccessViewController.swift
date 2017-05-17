@@ -10,11 +10,37 @@ import UIKit
 
 class SuccessViewController: UIViewController {
 
+    @IBOutlet weak var completeView: UIView!
+    @IBOutlet weak var donationLabel: UILabel!
+    @IBOutlet weak var refreshImageView: UIImageView!
+    @IBOutlet weak var doneImageView: UIImageView!
+    @IBOutlet weak var donateImageView: UIImageView!
+    var activityIndicator: UIActivityIndicatorView = UIActivityIndicatorView();
     override func viewDidLoad() {
         super.viewDidLoad()
+        completeView.isHidden = true
+        refreshImageView.isHidden = true
+        activityIndicator.center = self.view.center
+        activityIndicator.hidesWhenStopped = true
+        activityIndicator.activityIndicatorViewStyle = UIActivityIndicatorViewStyle.whiteLarge
+        view.addSubview(activityIndicator)
+        activityIndicator.startAnimating()
+//        UIView.animate(withDuration: 3, animations: {
+//            self.refreshImageView.transform = CGAffineTransform(rotationAngle: .pi * 2)
+//            self.completeView.alpha = 1.0
+//        })
+        let when = DispatchTime.now() + 2
+        DispatchQueue.main.asyncAfter(deadline: when) {
+            self.activityIndicator.stopAnimating()
+            self.completeView.isHidden = false
+        }
+        
+        UIApplication.shared.beginIgnoringInteractionEvents()
 
         // Do any additional setup after loading the view.
     }
+    
+    
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
