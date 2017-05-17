@@ -900,12 +900,12 @@ Feel free to share this tag with your friends and family.</string>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="stg-HR-mv5">
-                        <barButtonItem key="leftBarButtonItem" title="Logout" id="bHq-fL-QZ5">
+                        <barButtonItem key="leftBarButtonItem" image="logoutIcon1" id="bHq-fL-QZ5">
                             <connections>
                                 <action selector="onLogoutTapped:" destination="z9h-aI-Op9" id="ccU-gK-o8Z"/>
                             </connections>
                         </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" title="Past" id="lKb-UC-Gf3"/>
+                        <barButtonItem key="rightBarButtonItem" image="historyIcon1" id="lKb-UC-Gf3"/>
                     </navigationItem>
                     <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
                     <connections>
@@ -1307,9 +1307,10 @@ Feel free to share this tag with your friends and family.</string>
                     <toolbarItems/>
                     <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" backIndicatorImage="donaidLogo" id="AR5-zv-AbO">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" translucent="NO" backIndicatorImage="donaidLogo" id="AR5-zv-AbO">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <color key="barTintColor" red="0.63137254901960782" green="0.0" blue="0.22745098039215686" alpha="1" colorSpace="calibratedRGB"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -1346,6 +1347,8 @@ Feel free to share this tag with your friends and family.</string>
         <image name="crisisIcon" width="43" height="69"/>
         <image name="donaidLogo" width="720" height="164"/>
         <image name="donaidicon1" width="270" height="269"/>
+        <image name="historyIcon1" width="30" height="30"/>
+        <image name="logoutIcon1" width="30" height="31"/>
         <image name="ongoingWhite" width="124" height="68"/>
         <image name="peopleIcon" width="27" height="63"/>
         <image name="searchWhite" width="108" height="110"/>
