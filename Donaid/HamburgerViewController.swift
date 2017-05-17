@@ -13,6 +13,8 @@ class HamburgerViewController: UIViewController {
     @IBOutlet weak var newContentView: UIView!
     @IBOutlet weak var highlightBarWidth: NSLayoutConstraint!
     @IBOutlet weak var highlightBarXPos: NSLayoutConstraint!
+    @IBOutlet weak var ongoingLayoutXPos: NSLayoutConstraint!
+    @IBOutlet weak var searchIconXPos: NSLayoutConstraint!
     
     var firstViewController: UIViewController?
     var secondViewController: UIViewController?
@@ -41,7 +43,8 @@ class HamburgerViewController: UIViewController {
         
         screenWidth = view.bounds.width
         highlightBarWidth.constant = (screenWidth! / 2)
-        
+        ongoingLayoutXPos.constant = (screenWidth! / 4) - 22.5
+        searchIconXPos.constant = (screenWidth! / 4) - 17.5
 
         // Do any additional setup after loading the view.
         let storyBoard = UIStoryboard.init(name: "Main", bundle: nil)
