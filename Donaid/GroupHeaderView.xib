@@ -39,18 +39,18 @@
                     </constraints>
                 </view>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Syria Crisis" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aoT-5H-NA8">
-                    <rect key="frame" x="20" y="12" width="135" height="36"/>
-                    <fontDescription key="fontDescription" type="system" weight="thin" pointSize="30"/>
+                    <rect key="frame" x="20" y="13.5" width="104.5" height="27.5"/>
+                    <fontDescription key="fontDescription" type="system" weight="thin" pointSize="23"/>
                     <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     <nil key="highlightedColor"/>
                 </label>
             </subviews>
             <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
             <constraints>
-                <constraint firstItem="aoT-5H-NA8" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="YcA-PB-2IM"/>
                 <constraint firstItem="aoT-5H-NA8" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="20" id="ZOi-Rm-afj"/>
                 <constraint firstItem="dBw-rO-bkc" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="bAa-7v-rsd"/>
                 <constraint firstAttribute="bottom" secondItem="dBw-rO-bkc" secondAttribute="bottom" constant="5" id="urX-Dz-ur3"/>
+                <constraint firstItem="aoT-5H-NA8" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" constant="-3" id="vq5-0q-7la"/>
                 <constraint firstAttribute="trailing" secondItem="dBw-rO-bkc" secondAttribute="trailing" id="wMW-Ix-8PA"/>
                 <constraint firstItem="dBw-rO-bkc" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="xLv-dy-aI4"/>
             </constraints>

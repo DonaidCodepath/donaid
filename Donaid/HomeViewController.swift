@@ -8,7 +8,7 @@
 
 import UIKit
 
-class HomeViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+class HomeViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, UIScrollViewDelegate {
 
     @IBOutlet weak var tableView: UITableView!
     
@@ -36,6 +36,15 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
         initSections()
         fetchAllProjects()
         
+        let myPanGestureRecognizer = UIPanGestureRecognizer(target: self, action: #selector(myPanAction))
+        
+        myPanGestureRecognizer.minimumNumberOfTouches = 1
+        myPanGestureRecognizer.maximumNumberOfTouches = 1
+        view.addGestureRecognizer(myPanGestureRecognizer)
+    }
+    
+    func myPanAction(recognizer: UIPanGestureRecognizer) {
+        print("anything1")
     }
     
     func initSections() {
@@ -146,13 +155,12 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
         
         if sectionsExpanded[section!]! {
             view.rotateArrow(expanded: false)
-            
             sectionsExpanded[section!] = false
-            //view.headerArrow = #imageLiteral(resourceName: "arrowDown")
+            view.headerArrow = #imageLiteral(resourceName: "arrowDown")
         } else {
             view.rotateArrow(expanded: true)
             sectionsExpanded[section!] = true
-            //view.headerArrow = #imageLiteral(resourceName: "arrowUp")
+            view.headerArrow = #imageLiteral(resourceName: "arrowUp")
         }
         
         tableView.reloadSections(IndexSet(integer: section!), with: .automatic)
@@ -200,9 +208,11 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
         defaults.removeObject(forKey: "currentUserRegistered")
         
         NotificationCenter.default.post(name: .userDidLogoutNotificationName, object: nil)
-        //let storyBoard = UIStoryboard.init(name: "Main", bundle: nil)
-        //let loginController = storyBoard.instantiateViewController(withIdentifier: "LoginViewController")
-        
+    }
+    
+    func scrollViewDidScroll(_ scrollView: UIScrollView) {
+        let thing = scrollView.contentOffset
+        print ("anything3")
     }
 
     /*

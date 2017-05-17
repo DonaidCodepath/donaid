@@ -8,7 +8,7 @@
 
 import UIKit
 
-class HamburgerViewController: UIViewController {
+class HamburgerViewController: UIViewController, UIScrollViewDelegate {
     
     @IBOutlet weak var newContentView: UIView!
     @IBOutlet weak var highlightBarWidth: NSLayoutConstraint!
@@ -16,11 +16,17 @@ class HamburgerViewController: UIViewController {
     @IBOutlet weak var ongoingLayoutXPos: NSLayoutConstraint!
     @IBOutlet weak var searchIconXPos: NSLayoutConstraint!
     
+    @IBOutlet weak var tabBarView: UIView!
+    @IBOutlet weak var tabBarBottomConstraint: NSLayoutConstraint!
+    
+    
+    
     var firstViewController: UIViewController?
     var secondViewController: UIViewController?
     
     var screenWidth: CGFloat?
     var trendingSelected = true
+    var originalBottomMargin: CGFloat!
     
     var contentViewController: UIViewController! {
         didSet(oldContentViewController)  {
@@ -53,6 +59,16 @@ class HamburgerViewController: UIViewController {
         firstViewController = trendingNavigationController
         secondViewController = searchNavigationController
         contentViewController = trendingNavigationController
+        
+        let myPanGestureRecognizer = UIPanGestureRecognizer(target: self, action: #selector(myPanAction))
+        
+        myPanGestureRecognizer.minimumNumberOfTouches = 1
+        myPanGestureRecognizer.maximumNumberOfTouches = 1
+        trendingNavigationController.view.addGestureRecognizer(myPanGestureRecognizer)
+    }
+    
+    func myPanAction(recognizer: UIPanGestureRecognizer) {
+        print("anything1")
     }
     
     @IBAction func onTrendingTapped(_ sender: Any) {
@@ -72,6 +88,8 @@ class HamburgerViewController: UIViewController {
     @IBAction func onSearchTapped(_ sender: Any) {
         print("Search tapped")
         
+        //tabBarBottomConstraint.constant -= tabBarView.frame.height
+        
         if trendingSelected {
             UIView.animate(withDuration: 0.1, animations: {
                 self.highlightBarXPos.constant += (self.screenWidth! / 2)
@@ -83,10 +101,20 @@ class HamburgerViewController: UIViewController {
         trendingSelected = false
     }
     
+    
+    @IBAction func anything(_ sender: UIPanGestureRecognizer) {
+        print("anything")
+    }
+    
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    func scrollViewDidScroll(_ scrollView: UIScrollView) {
+        let thing = scrollView.contentOffset
+        print ("anything2")
     }
     
 

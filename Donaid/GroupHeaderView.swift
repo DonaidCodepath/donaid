@@ -73,24 +73,15 @@ class GroupHeaderView: UIView {
     }
     
     func rotateArrow(expanded: Bool) {
-        //UIView.animate(withDuration: 0.1, animations: {
+        UIView.animate(withDuration: 0.7, animations: {
+            self.arrowImage.transform = self.arrowImage.transform.rotated(by: CGFloat(M_PI_2))
+        })
+        //UIView.animate(withDuration: 0.7, delay: 0, usingSpringWithDamping: 1, initialSpringVelocity: 1, options: .curveEaseIn, animations: {
         //    self.arrowImage.transform = self.arrowImage.transform.rotated(by: CGFloat(M_PI_2))
-        //})
-        //UIView.animate(withDuration: 3, delay: 0, usingSpringWithDamping: 1, initialSpringVelocity: 1, options: .curveEaseIn, animations: {
-        //    self.arrowImage.transform = self.arrowImage.transform.rotated(by: CGFloat(M_PI_2))
-        //    self.arrowImage = UIImageView(image: #imageLiteral(resourceName: "arrowUp"))
-       // }) { (bool: Bool) in
-         //   print(bool)
-       //     self.arrowImage = UIImageView(image: #imageLiteral(resourceName: "arrowUp"))
-       // }
+        //}) { (bool: Bool) in
+        //    print(bool)
+        //}
         
-        if expanded {
-            self.arrowImage.image = #imageLiteral(resourceName: "arrowUp")
-        } else {
-            self.arrowImage.image = #imageLiteral(resourceName: "arrowDown")
-        }
-        
-        //self.arrowImage.transform = self.arrowImage.transform.rotated(by: CGFloat(M_PI_2))
     }
 
     /*
