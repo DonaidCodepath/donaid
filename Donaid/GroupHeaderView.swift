@@ -15,16 +15,27 @@ class GroupHeaderView: UIView {
     @IBOutlet weak var groupLabel: UILabel!
     @IBOutlet weak var arrowImage: UIImageView!
     
-    var didSetArrowImage = false
+    var expanded: Bool!
     
     var caption: String? {
         get { return groupLabel?.text }
         set { groupLabel.text = newValue }
     }
     
-    var arrow: UIImageView? {
-        get { return arrowImage }
-        set { arrowImage = newValue }
+    var myBool: Bool? {
+        get { return expanded }
+        set { expanded = newValue }
+    }
+    
+    var headerArrow: UIImage? {
+        get { return arrowImage.image }
+        set { arrowImage.image = newValue }
+    }
+    
+    init(frame: CGRect, expanded: Bool!) {
+        super.init(frame: frame)
+        self.expanded = expanded
+        initSubviews()
     }
     
     required init(coder aDecoder: NSCoder) {
@@ -44,26 +55,42 @@ class GroupHeaderView: UIView {
         contentView.frame = bounds
         addSubview(contentView)
         
-        // custom initialization logic
-        if !didSetArrowImage {
-            print("Hit the init of header")
-            arrowImage.transform = arrowImage.transform.rotated(by: CGFloat(M_PI_2))
+        if (expanded != nil) {
+            if (self.expanded == true) {
+                print("Hit init in expanded state")
+                self.arrowImage.image = #imageLiteral(resourceName: "arrowUp")
+            } else {
+                print("retracted state")
+                self.arrowImage.image = #imageLiteral(resourceName: "arrowUp")
+            }
+        } else {
+            self.arrowImage = UIImageView(image: #imageLiteral(resourceName: "arrowUp"))
         }
+        // custom initialization logic
+        
         
         
     }
     
-    func rotateArrow() {
+    func rotateArrow(expanded: Bool) {
         //UIView.animate(withDuration: 0.1, animations: {
         //    self.arrowImage.transform = self.arrowImage.transform.rotated(by: CGFloat(M_PI_2))
         //})
-        UIView.animate(withDuration: 0.1, delay: 0, usingSpringWithDamping: 1, initialSpringVelocity: 1, options: .curveEaseIn, animations: {
-            self.arrowImage.transform = self.arrowImage.transform.rotated(by: CGFloat(M_PI_2))
-        }) { (bool: Bool) in
-            print(bool)
-            
+        //UIView.animate(withDuration: 3, delay: 0, usingSpringWithDamping: 1, initialSpringVelocity: 1, options: .curveEaseIn, animations: {
+        //    self.arrowImage.transform = self.arrowImage.transform.rotated(by: CGFloat(M_PI_2))
+        //    self.arrowImage = UIImageView(image: #imageLiteral(resourceName: "arrowUp"))
+       // }) { (bool: Bool) in
+         //   print(bool)
+       //     self.arrowImage = UIImageView(image: #imageLiteral(resourceName: "arrowUp"))
+       // }
+        
+        if expanded {
+            self.arrowImage.image = #imageLiteral(resourceName: "arrowUp")
+        } else {
+            self.arrowImage.image = #imageLiteral(resourceName: "arrowDown")
         }
-        self.arrowImage.transform = self.arrowImage.transform.rotated(by: CGFloat(M_PI_2))
+        
+        //self.arrowImage.transform = self.arrowImage.transform.rotated(by: CGFloat(M_PI_2))
     }
 
     /*

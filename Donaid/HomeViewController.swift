@@ -139,19 +139,24 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
     
     func test(sender: UITapGestureRecognizer){
         //using sender, we can get the point in respect to the table view
-        let view = sender.view as? GroupHeaderView
-        let section = view?.tag as Int!
+        let view = sender.view as! GroupHeaderView
+        let section = view.tag as Int!
         
-        view?.rotateArrow()
-        
+        //view.expanded = sectionsExpanded[section!]!
         
         if sectionsExpanded[section!]! {
+            view.rotateArrow(expanded: false)
+            
             sectionsExpanded[section!] = false
+            //view.headerArrow = #imageLiteral(resourceName: "arrowDown")
         } else {
+            view.rotateArrow(expanded: true)
             sectionsExpanded[section!] = true
+            //view.headerArrow = #imageLiteral(resourceName: "arrowUp")
         }
         
         tableView.reloadSections(IndexSet(integer: section!), with: .automatic)
+        tableView.reloadData()
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
@@ -160,8 +165,14 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
     
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
         //let headerView = UIView(frame: CGRect(x: 100, y: 100, width: 100, height: 60))
-        let headerView = GroupHeaderView(frame: CGRect(x: 0, y: 0, width: view.bounds.width, height: 60))
+        let isSectionExpanded = sectionsExpanded[section]!
+        let headerView = GroupHeaderView(frame: CGRect(x: 0, y: 0, width: view.bounds.width, height: 60), expanded: isSectionExpanded)
         headerView.caption = sectionTitles[section]
+        if (isSectionExpanded) {
+            headerView.headerArrow = #imageLiteral(resourceName: "arrowUp")
+        } else {
+            headerView.headerArrow = #imageLiteral(resourceName: "arrowDown")
+        }
         headerView.tag = section
         let gesture = UITapGestureRecognizer(target: self, action: #selector(HomeViewController.test))
         headerView.addGestureRecognizer(gesture)
