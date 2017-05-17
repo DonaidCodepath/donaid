@@ -17,6 +17,8 @@ class FTUCardNumberViewController: UIViewController {
    
     @IBOutlet weak var welcomeMessage: UILabel!
     
+    @IBOutlet weak var nextButtonBottomSpace: NSLayoutConstraint!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -26,6 +28,16 @@ class FTUCardNumberViewController: UIViewController {
         
         let userName = defaults.object(forKey: "currentUserFirstName") as? String
         welcomeMessage.text = "Hello " + userName! + ","
+        
+        
+        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShow), name: .UIKeyboardWillShow, object: nil)
+    }
+    
+    func keyboardWillShow(notification: NSNotification) {
+        if let keyboardSize = (notification.userInfo?[UIKeyboardFrameBeginUserInfoKey] as? NSValue)?.cgRectValue {
+            let keyboardHeight = keyboardSize.height
+            nextButtonBottomSpace.constant = keyboardHeight + 5
+        }
     }
 
     override func didReceiveMemoryWarning() {

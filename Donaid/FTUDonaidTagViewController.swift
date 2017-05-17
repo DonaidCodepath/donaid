@@ -10,12 +10,20 @@ import UIKit
 
 class FTUDonaidTagViewController: UIViewController {
 
+    @IBOutlet weak var buttonBottomSpace: NSLayoutConstraint!
     @IBOutlet weak var donaidTag: UITextField!
     override func viewDidLoad() {
         super.viewDidLoad()
 
         donaidTag.becomeFirstResponder()
-        // Do any additional setup after loading the view.
+        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShow), name: .UIKeyboardWillShow, object: nil)
+    }
+    
+    func keyboardWillShow(notification: NSNotification) {
+        if let keyboardSize = (notification.userInfo?[UIKeyboardFrameBeginUserInfoKey] as? NSValue)?.cgRectValue {
+            let keyboardHeight = keyboardSize.height
+            buttonBottomSpace.constant = keyboardHeight + 5
+        }
     }
 
     override func didReceiveMemoryWarning() {
