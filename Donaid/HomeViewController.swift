@@ -8,7 +8,7 @@
 
 import UIKit
 
-class HomeViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+class HomeViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, UIScrollViewDelegate {
 
     @IBOutlet weak var tableView: UITableView!
     
@@ -36,6 +36,15 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
         initSections()
         fetchAllProjects()
         
+        let myPanGestureRecognizer = UIPanGestureRecognizer(target: self, action: #selector(myPanAction))
+        
+        myPanGestureRecognizer.minimumNumberOfTouches = 1
+        myPanGestureRecognizer.maximumNumberOfTouches = 1
+        view.addGestureRecognizer(myPanGestureRecognizer)
+    }
+    
+    func myPanAction(recognizer: UIPanGestureRecognizer) {
+        print("anything1")
     }
     
     func initSections() {
@@ -139,24 +148,23 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
     
     func test(sender: UITapGestureRecognizer){
         //using sender, we can get the point in respect to the table view
-        let view = sender.view
-        let section = view?.tag as Int!
+        let view = sender.view as! GroupHeaderView
+        let section = view.tag as Int!
         
-        let tapLocation = sender.location(in: self.tableView)
-        
-        //using the tapLocation, we retrieve the corresponding indexPath
-        let indexPath = self.tableView.indexPathForRow(at: tapLocation)
-        
-        //finally, we print out the value
-        print(view?.tag)
+        //view.expanded = sectionsExpanded[section!]!
         
         if sectionsExpanded[section!]! {
+            view.rotateArrow(expanded: false)
             sectionsExpanded[section!] = false
+            view.headerArrow = #imageLiteral(resourceName: "arrowDown")
         } else {
+            view.rotateArrow(expanded: true)
             sectionsExpanded[section!] = true
+            view.headerArrow = #imageLiteral(resourceName: "arrowUp")
         }
         
         tableView.reloadSections(IndexSet(integer: section!), with: .automatic)
+        tableView.reloadData()
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
@@ -165,8 +173,14 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
     
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
         //let headerView = UIView(frame: CGRect(x: 100, y: 100, width: 100, height: 60))
-        let headerView = GroupHeaderView(frame: CGRect(x: 0, y: 0, width: view.bounds.width, height: 60))
+        let isSectionExpanded = sectionsExpanded[section]!
+        let headerView = GroupHeaderView(frame: CGRect(x: 0, y: 0, width: view.bounds.width, height: 60), expanded: isSectionExpanded)
         headerView.caption = sectionTitles[section]
+        if (isSectionExpanded) {
+            headerView.headerArrow = #imageLiteral(resourceName: "arrowUp")
+        } else {
+            headerView.headerArrow = #imageLiteral(resourceName: "arrowDown")
+        }
         headerView.tag = section
         let gesture = UITapGestureRecognizer(target: self, action: #selector(HomeViewController.test))
         headerView.addGestureRecognizer(gesture)
@@ -194,9 +208,11 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
         defaults.removeObject(forKey: "currentUserRegistered")
         
         NotificationCenter.default.post(name: .userDidLogoutNotificationName, object: nil)
-        //let storyBoard = UIStoryboard.init(name: "Main", bundle: nil)
-        //let loginController = storyBoard.instantiateViewController(withIdentifier: "LoginViewController")
-        
+    }
+    
+    func scrollViewDidScroll(_ scrollView: UIScrollView) {
+        let thing = scrollView.contentOffset
+        print ("anything3")
     }
 
     /*
