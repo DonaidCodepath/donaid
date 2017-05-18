@@ -12,14 +12,13 @@ class SuccessViewController: UIViewController {
 
     @IBOutlet weak var completeView: UIView!
     @IBOutlet weak var donationLabel: UILabel!
-    @IBOutlet weak var refreshImageView: UIImageView!
     @IBOutlet weak var doneImageView: UIImageView!
     @IBOutlet weak var donateImageView: UIImageView!
     var activityIndicator: UIActivityIndicatorView = UIActivityIndicatorView();
     override func viewDidLoad() {
         super.viewDidLoad()
         completeView.isHidden = true
-        refreshImageView.isHidden = true
+        //refreshImageView.isHidden = true
         activityIndicator.center = self.view.center
         activityIndicator.hidesWhenStopped = true
         activityIndicator.activityIndicatorViewStyle = UIActivityIndicatorViewStyle.whiteLarge
@@ -36,6 +35,12 @@ class SuccessViewController: UIViewController {
         }
         
         UIApplication.shared.beginIgnoringInteractionEvents()
+        
+        UIView.animate(withDuration: 3) { 
+            
+        }
+        
+        
 
         // Do any additional setup after loading the view.
     }
@@ -48,14 +53,16 @@ class SuccessViewController: UIViewController {
     }
     
 
-    /*
+    
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
+        print ("Hitting done")
+        performSegue(withIdentifier: "id", sender: sender)
     }
-    */
+ 
 
 }

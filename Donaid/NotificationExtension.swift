@@ -11,4 +11,5 @@ import UIKit
 
 extension Notification.Name {
     static let userDidLogoutNotificationName = Notification.Name("didLogout")
+    static let userSelectedProject = Notification.Name("selectedProject")
 }

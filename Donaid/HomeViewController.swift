@@ -8,11 +8,15 @@
 
 import UIKit
 
+@objc protocol HomeViewControllerDelegate {
+    @objc optional func homeViewController(homeViewController: HomeViewController, didSelectCell: Bool)
+}
+
 class HomeViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, UIScrollViewDelegate {
 
     @IBOutlet weak var tableView: UITableView!
     
-    
+    weak var delegate: HomeViewControllerDelegate?
     var sectionsExpanded = [Int: Bool] ()
     var splitProjects = [Int: [HDXProject]]()
     var fullProjects: [HDXProject] = []
@@ -210,20 +214,23 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
         NotificationCenter.default.post(name: .userDidLogoutNotificationName, object: nil)
     }
     
-    func scrollViewDidScroll(_ scrollView: UIScrollView) {
-        let thing = scrollView.contentOffset
-        print ("anything3")
-    }
+    //func scrollViewDidScroll(_ scrollView: UIScrollView) {
+    //    let thing = scrollView.contentOffset
+    //    print ("anything3")
+    //}
 
-    /*
+    
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
+        print("segue hit")
+        NotificationCenter.default.post(name: .userSelectedProject, object: nil)
+        //delegate?.homeViewController?(homeViewController: self, didSelectCell: true)
     }
-    */
+    
 
     
 }
