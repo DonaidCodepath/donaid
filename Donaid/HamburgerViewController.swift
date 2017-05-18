@@ -8,7 +8,7 @@
 
 import UIKit
 
-class HamburgerViewController: UIViewController, UIScrollViewDelegate {
+class HamburgerViewController: UIViewController, UIScrollViewDelegate, HomeViewControllerDelegate {
     
     @IBOutlet weak var newContentView: UIView!
     @IBOutlet weak var highlightBarWidth: NSLayoutConstraint!
@@ -27,6 +27,9 @@ class HamburgerViewController: UIViewController, UIScrollViewDelegate {
     var screenWidth: CGFloat?
     var trendingSelected = true
     var originalBottomMargin: CGFloat!
+    
+    var tabBarViewHiddenLevel: CGFloat!
+    var tabBarViewShownLevel: CGFloat!
     
     var contentViewController: UIViewController! {
         didSet(oldContentViewController)  {
@@ -60,11 +63,26 @@ class HamburgerViewController: UIViewController, UIScrollViewDelegate {
         secondViewController = searchNavigationController
         contentViewController = trendingNavigationController
         
+        
+        
         let myPanGestureRecognizer = UIPanGestureRecognizer(target: self, action: #selector(myPanAction))
         
         myPanGestureRecognizer.minimumNumberOfTouches = 1
         myPanGestureRecognizer.maximumNumberOfTouches = 1
         trendingNavigationController.view.addGestureRecognizer(myPanGestureRecognizer)
+        
+        tabBarViewHiddenLevel = tabBarBottomConstraint.constant -  tabBarView.frame.height
+        tabBarViewShownLevel = tabBarBottomConstraint.constant
+        
+    }
+    
+    func hideTabBar() {
+        tabBarView.isHidden = true
+        //tabBarBottomConstraint.constant = tabBarViewHiddenLevel
+    }
+    
+    func showTabBar() {
+        tabBarBottomConstraint.constant = tabBarViewShownLevel
     }
     
     func myPanAction(recognizer: UIPanGestureRecognizer) {
@@ -115,6 +133,10 @@ class HamburgerViewController: UIViewController, UIScrollViewDelegate {
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
         let thing = scrollView.contentOffset
         print ("anything2")
+    }
+    
+    func homeViewController(homeViewController: HomeViewController, didSelectCell: Bool) {
+        print("aaaah")
     }
     
 

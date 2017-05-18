@@ -60,6 +60,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         }
         
         NotificationCenter.default.addObserver(forName: .userDidLogoutNotificationName, object: nil, queue: OperationQueue.main) { (notification: Notification!) in
+            
             print("UserDidlogout")
             
             let storyboard = UIStoryboard(name: "Main", bundle: nil)
@@ -68,6 +69,18 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             self.window?.rootViewController = viewController
             
         }
+        
+        NotificationCenter.default.addObserver(forName: .userSelectedProject, object: nil, queue: OperationQueue.main) { (notification: Notification!) in
+            
+            print("We made it here fam 1")
+            //let hamburgerVC = storyBoard.instantiateViewController(withIdentifier: "HamburgerViewController") as? HamburgerViewController
+            //print(self.window?.rootViewController?.navigationController)
+            let controller = self.window?.rootViewController as! HamburgerViewController
+            controller.hideTabBar()
+            //hamburgerVC?.hideTabBar()
+        }
+        
+        
 
         
         return true

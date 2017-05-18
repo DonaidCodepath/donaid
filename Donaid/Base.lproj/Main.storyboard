@@ -1,11 +1,11 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1421" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -756,7 +756,7 @@ Feel free to share this tag with your friends and family.</string>
                                         <rect key="frame" x="0.0" y="28" width="375" height="181"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="WOc-WC-2n6" id="dub-TU-jJJ">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="180.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="180"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rez-2f-NFq">
@@ -890,6 +890,7 @@ Feel free to share this tag with your friends and family.</string>
                                             <outlet property="emergencyTypeLabel" destination="oHD-V5-Zgh" id="CQN-yI-gWy"/>
                                             <outlet property="projectSummary" destination="4kM-mh-9bi" id="B5y-Q1-CZd"/>
                                             <outlet property="regionLabel" destination="fcd-sc-KvO" id="6eI-yP-Z6E"/>
+                                            <segue destination="1vJ-fT-fYm" kind="show" id="Ibd-Jh-QVI"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -976,7 +977,7 @@ Feel free to share this tag with your friends and family.</string>
                                         <rect key="frame" x="0.0" y="28" width="375" height="187"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="kWf-tO-UsR" id="SRJ-ds-ygQ">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="186.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="186"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Gc0-FD-LVS">
@@ -1142,11 +1143,11 @@ Feel free to share this tag with your friends and family.</string>
                         <viewControllerLayoutGuide type="bottom" id="2q4-lc-Pcc"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="Nzv-bR-NSh">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CGg-nh-qAF">
-                                <rect key="frame" x="149" y="605" width="77" height="42"/>
+                                <rect key="frame" x="149" y="511" width="77" height="42"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="77" id="1wR-HA-dWh"/>
                                     <constraint firstAttribute="height" constant="42" id="5hO-NF-TLd"/>
@@ -1160,7 +1161,7 @@ Feel free to share this tag with your friends and family.</string>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i0z-Aa-EEN">
-                                <rect key="frame" x="166" y="80" width="43" height="84"/>
+                                <rect key="frame" x="166" y="40" width="43" height="84"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="84" id="tVz-qH-R4V"/>
                                 </constraints>
@@ -1169,7 +1170,7 @@ Feel free to share this tag with your friends and family.</string>
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1Vf-Sd-wKN">
-                                <rect key="frame" x="82.5" y="327" width="210" height="260"/>
+                                <rect key="frame" x="83" y="223" width="210" height="260"/>
                                 <color key="backgroundColor" red="0.93531602621078491" green="0.24077653884887695" blue="0.46205127239227295" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="260" id="Exb-IN-54Z"/>
@@ -1177,7 +1178,7 @@ Feel free to share this tag with your friends and family.</string>
                                 </constraints>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xcj-vy-xGC">
-                                <rect key="frame" x="141" y="90" width="25" height="36"/>
+                                <rect key="frame" x="141" y="50" width="25" height="36"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="25" id="QPQ-RD-cK2"/>
                                     <constraint firstAttribute="height" constant="36" id="s5b-DP-C2z"/>
@@ -1190,14 +1191,14 @@ Feel free to share this tag with your friends and family.</string>
                         <color key="backgroundColor" red="0.93531602621078491" green="0.24077653884887695" blue="0.46205127239227295" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="bottom" secondItem="1Vf-Sd-wKN" secondAttribute="bottom" constant="80" id="0KP-ct-4bk"/>
+                            <constraint firstAttribute="bottom" secondItem="1Vf-Sd-wKN" secondAttribute="bottom" constant="120" id="0KP-ct-4bk"/>
                             <constraint firstItem="i0z-Aa-EEN" firstAttribute="centerX" secondItem="Nzv-bR-NSh" secondAttribute="centerX" id="5qr-09-Uzg"/>
-                            <constraint firstItem="2q4-lc-Pcc" firstAttribute="top" secondItem="CGg-nh-qAF" secondAttribute="bottom" constant="20" id="9Vg-5P-Gsz"/>
+                            <constraint firstItem="2q4-lc-Pcc" firstAttribute="top" secondItem="CGg-nh-qAF" secondAttribute="bottom" constant="50" id="9Vg-5P-Gsz"/>
                             <constraint firstItem="1Vf-Sd-wKN" firstAttribute="centerX" secondItem="Nzv-bR-NSh" secondAttribute="centerX" id="UCz-au-fbx"/>
                             <constraint firstItem="CGg-nh-qAF" firstAttribute="centerX" secondItem="Nzv-bR-NSh" secondAttribute="centerX" id="Y4z-Hg-aj9"/>
-                            <constraint firstItem="Xcj-vy-xGC" firstAttribute="top" secondItem="Nzv-bR-NSh" secondAttribute="top" constant="90" id="hZg-dz-leA"/>
+                            <constraint firstItem="Xcj-vy-xGC" firstAttribute="top" secondItem="Nzv-bR-NSh" secondAttribute="top" constant="50" id="hZg-dz-leA"/>
                             <constraint firstItem="i0z-Aa-EEN" firstAttribute="leading" secondItem="Xcj-vy-xGC" secondAttribute="trailing" id="sGT-3z-2NT"/>
-                            <constraint firstItem="i0z-Aa-EEN" firstAttribute="top" secondItem="Nzv-bR-NSh" secondAttribute="top" constant="80" id="t2c-q6-kdx"/>
+                            <constraint firstItem="i0z-Aa-EEN" firstAttribute="top" secondItem="Nzv-bR-NSh" secondAttribute="top" constant="40" id="t2c-q6-kdx"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="Shr-cs-Ekn"/>
@@ -1222,18 +1223,21 @@ Feel free to share this tag with your friends and family.</string>
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="refresh" translatesAutoresizingMaskIntoConstraints="NO" id="VLH-B8-2TH">
-                                <rect key="frame" x="101" y="280" width="170" height="176"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="179" id="Nh3-dd-StX"/>
-                                    <constraint firstAttribute="width" constant="175" id="VRi-Fq-2Pu"/>
-                                </constraints>
-                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1kU-YM-Sta">
+                                <rect key="frame" x="158" y="464" width="58" height="42"/>
+                                <fontDescription key="fontDescription" type="system" weight="thin" pointSize="25"/>
+                                <state key="normal" title="Done">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="nVO-ci-6Xl" kind="show" identifier="id" id="cGe-VO-7nc"/>
+                                </connections>
+                            </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="egp-Fd-YmZ">
-                                <rect key="frame" x="28" y="50" width="320" height="430"/>
+                                <rect key="frame" x="28" y="28" width="320" height="430"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your Payment is done" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="beZ-MO-Fp2">
-                                        <rect key="frame" x="51.5" y="187" width="217" height="29"/>
+                                        <rect key="frame" x="52" y="187" width="217" height="29"/>
                                         <fontDescription key="fontDescription" type="system" weight="thin" pointSize="24"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
@@ -1258,6 +1262,11 @@ Feel free to share this tag with your friends and family.</string>
                                             <constraint firstAttribute="width" constant="180" id="vsD-Me-2PJ"/>
                                         </constraints>
                                     </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4VJ-gG-bDc">
+                                        <rect key="frame" x="8" y="8" width="46" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="Button"/>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <color key="tintColor" red="0.93531602619999998" green="0.2407765388" blue="0.46205127239999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -1274,26 +1283,12 @@ Feel free to share this tag with your friends and family.</string>
                                     <constraint firstAttribute="height" constant="430" id="zv6-Gb-Xby"/>
                                 </constraints>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1kU-YM-Sta">
-                                <rect key="frame" x="158" y="605" width="58" height="42"/>
-                                <fontDescription key="fontDescription" type="system" weight="thin" pointSize="25"/>
-                                <state key="normal" title="Done">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <segue destination="BNj-gp-sna" kind="show" id="ard-go-Qc8"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.93531602619999998" green="0.2407765388" blue="0.46205127239999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="0n1-s2-p7o" firstAttribute="top" secondItem="1kU-YM-Sta" secondAttribute="bottom" constant="20" id="4b8-Ir-zzs"/>
                             <constraint firstItem="1kU-YM-Sta" firstAttribute="centerX" secondItem="ye4-B1-gsA" secondAttribute="centerX" id="9lq-lF-zIF"/>
-                            <constraint firstAttribute="trailing" secondItem="VLH-B8-2TH" secondAttribute="trailing" constant="102" id="Tpz-M7-Rv2"/>
-                            <constraint firstItem="1kU-YM-Sta" firstAttribute="top" secondItem="VLH-B8-2TH" secondAttribute="bottom" constant="149" id="WBq-Ys-mRU"/>
-                            <constraint firstItem="VLH-B8-2TH" firstAttribute="top" secondItem="eRT-AV-ZY2" secondAttribute="bottom" constant="257" id="XVB-Bb-Pou"/>
-                            <constraint firstItem="1kU-YM-Sta" firstAttribute="top" secondItem="egp-Fd-YmZ" secondAttribute="bottom" constant="125" id="gDa-AU-CzJ"/>
-                            <constraint firstItem="VLH-B8-2TH" firstAttribute="leading" secondItem="ye4-B1-gsA" secondAttribute="leading" constant="98" id="wvZ-3L-vqx"/>
+                            <constraint firstItem="egp-Fd-YmZ" firstAttribute="top" secondItem="eRT-AV-ZY2" secondAttribute="bottom" constant="8" id="M9W-At-t4o"/>
+                            <constraint firstItem="1kU-YM-Sta" firstAttribute="top" secondItem="8wb-lE-BdR" secondAttribute="bottom" constant="30" id="jnu-dY-sbQ"/>
                             <constraint firstItem="egp-Fd-YmZ" firstAttribute="centerX" secondItem="ye4-B1-gsA" secondAttribute="centerX" id="yzh-71-phs"/>
                         </constraints>
                     </view>
@@ -1303,7 +1298,6 @@ Feel free to share this tag with your friends and family.</string>
                         <outlet property="donateImageView" destination="tep-EL-kSH" id="0Ud-p1-Dn5"/>
                         <outlet property="donationLabel" destination="beZ-MO-Fp2" id="9iJ-KZ-KyB"/>
                         <outlet property="doneImageView" destination="8wb-lE-BdR" id="9LE-ro-N97"/>
-                        <outlet property="refreshImageView" destination="VLH-B8-2TH" id="P1w-lP-A7w"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UfA-lg-M43" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -1319,16 +1313,16 @@ Feel free to share this tag with your friends and family.</string>
                         <viewControllerLayoutGuide type="bottom" id="k3c-bT-Bi3"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="9cc-te-qeg">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="15a-vA-Cha">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="539"/>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <gestureRecognizers/>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mby-PC-yEK">
-                                <rect key="frame" x="0.0" y="602" width="375" height="65"/>
+                                <rect key="frame" x="0.0" y="538" width="375" height="65"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Oc2-RJ-0Jk">
                                         <rect key="frame" x="55" y="16" width="45" height="30"/>
@@ -1461,7 +1455,6 @@ Feel free to share this tag with your friends and family.</string>
         <image name="logoutIcon1" width="30" height="31"/>
         <image name="ongoingWhite" width="124" height="68"/>
         <image name="peopleIcon" width="27" height="63"/>
-        <image name="refresh" width="544" height="565"/>
         <image name="searchWhite" width="108" height="110"/>
         <image name="syria" width="262" height="254"/>
     </resources>
@@ -1471,6 +1464,5 @@ Feel free to share this tag with your friends and family.</string>
         <segue reference="ZB8-Eh-efw"/>
         <segue reference="ziC-IY-ljL"/>
         <segue reference="fu3-XU-YqE"/>
-        <segue reference="ard-go-Qc8"/>
     </inferredMetricsTieBreakers>
 </document>
