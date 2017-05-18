@@ -16,7 +16,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         
-        UIApplication.shared.statusBarStyle = .lightContent
+        
+//        UINavigationBar.appearance().barTintColor = UIColor(red: 233/255, green: 30/255, blue: 99/255, alpha: 1)
+//        UINavigationBar.appearance().isTranslucent = true
+//        UINavigationBar.appearance().tintColor = UIColor.white
+//        UINavigationBar.appearance().titleTextAttributes = [NSForegroundColorAttributeName:UIColor.white]
+//        UIApplication.shared.statusBarStyle = .lightContent
         let storyBoard = UIStoryboard.init(name: "Main", bundle: nil)
         
         let hamburgerVC = storyBoard.instantiateViewController(withIdentifier: "HamburgerViewController") as! HamburgerViewController
